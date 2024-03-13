@@ -7,10 +7,6 @@ module.exports = {
       './*.{html,js,md}'
     ],
     theme: {
-      fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        serif: ['Italiana', 'serif'],
-      },
       fontSize: {
         xs: ['0.75rem', '1.2'],
         sm: ['0.875rem;', '1.2'],

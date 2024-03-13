@@ -65,3 +65,36 @@ body {
         margin: 0 auto; /* Center the content horizontally */
     }
 }
+
+
+/* ----------- FONT WEIGHT AND ITALICS  --------- */
+
+.font-thin {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+
+.font-extralight {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+  }
+
+  .font-light {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+  }
+
+  .font-regular {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  .font-medium {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+  }
+
+  .font-semibold {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+  }
