@@ -1,0 +1,67 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ----------- Default Styles to apply to the whole project  --------- */
+
+@layer base {
+
+    h1, h2, h3, h4  {
+        @apply mb-[0.5em];
+    }
+
+    h1 {
+        @apply text-3xl leading-tight;
+    }
+    h2 {
+        @apply text-2xl leading-tight;
+    }
+    h3 {
+        @apply text-xl leading-tight;
+    }
+
+    h3 {
+        @apply text-lg leading-tight;
+    }
+    h4 {
+        @apply text-lg leading-tight;
+    }
+
+    p {
+        @apply font-sans-serif leading-6;
+    }
+
+    a {
+        @apply no-underline;
+    }
+
+  }
+
+
+/* ----------- ADDITIONAL COMPONENTS  --------- */
+
+    
+
+html {
+    scroll-behavior: smooth;
+      }
+
+
+
+
+/* For regular laptops and smaller screens */
+body {
+    max-width: 100%; /* Allow it to expand to the full width of the screen */
+    background-color: #001410; 
+    color:  #EEE0CB; 
+}
+
+/* For larger screens like flatscreen TVs */
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px; /* Set a specific max-width for larger screens */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+}
