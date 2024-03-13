@@ -7,6 +7,9 @@ module.exports = {
       './*.{html,js,md}'
     ],
     theme: {
+      fontFamily: {
+        'sans-serif': ['Josefin Sans', 'sans-serif'],
+      },
       fontSize: {
         xs: ['0.75rem', '1.2'],
         sm: ['0.875rem;', '1.2'],

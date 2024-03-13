@@ -2,34 +2,75 @@
 layout: default 
 title: Homepage
 seo: 
-	title: This should appear in the browser tab
-	description: 
-	keywords: 
-	social_image: 
-	hide-from-google: true
+ title: This should appear in the browser tab
+ description: 
+ keywords: 
+ social_image: 
+ hide-from-google: true
 ---
 
 <!----------------HEADER---------------------->
-<header class="min-h-100 sm:min-h-screen bg-cover bg-center relative text-center" style="background-image: url('images/temp-landscape.jpg');">
 
-    <div class="hidden sm:flex justify-between items-center px-4 py-2 absolute top-0 left-0 w-full">
-        <div class="hidden sm:block">
-            <a href="#" class="mx-0"> DEJAMA </a>
-        </div>
+<header class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('images/temp-landscape.jpg');">
 
-        <div class="flex items-center gap-4">
-            <a href="#contact" class="cta-buttons mx-0"> Book now </a>    
-        </div>
+	<div class="text-center">
+		<h2 class="font-medium text-light text-lg"> Dejama Glamping Resort </h2>
+		<p class="text-light"> Unwind and Relax <br> in the beautiful nature of Lombok</p>
+	</div>
+
+	  <!-- small bouncing dot at the bottom of the -->
+	<div class="absolute bg-white bottom-5p left-[cacl(50% - 1rem)] w-8 h-8 rounded-full bouncing-animation">
     </div>
-            
-    <div class="flex flex-col items-center padding-header">
-        <h1 class="text-7xl sm:text-[9rem] leading-[4rem] sm:leading-[8rem] md:leading-[9rem] "> The <br> Iron District </h1>
-        <h2 class="text-xl sm:text-3xl p-[3%] sm:pb-5p pb-10p"> Your home in the heart of Berlin </h2>
-    
-        <div class="sm:hidden">
-            <a href="#contact" class="cta-buttons"> Book now </a>    
-        </div>
-    
-    </div>   
 
 </header>
+			  
+
+
+<!----------------INTRO BANNER----------------->
+
+<div class="py-5p px-20p">
+
+	<h2 class="text-center"> Welcome to Dejama Glamping Resort. </h2>
+
+	<p class="text-center"> From the tranquil rustle of leaves to the starlit skies above, every detail has been crafted to immerse you in a world of comfort and wonder. </p>
+
+</div>
+
+
+
+<!----------------ROOMS 3 OPTIONS----------------->
+
+<div class="bg-grey py-5p">
+
+	<div class="max-w-screen-2xl mx-auto grid grid-cols-7">
+
+		<div class="col-span-1 relative">
+			<h4 class="[writing-mode:vertical-rl] rotate-180 absolute left-1 text-8xl font-semibold uppercase tracking-wider"> Lodging </h4>
+		</div>
+
+		<div class="col-span-2 p-5p">
+			<div>
+				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full  ">
+			</div>
+			<div class="px-5p mt-[-10%]">
+				<div class="bg-beige z-50 relative">
+					<h2 class="p-5p"> Glamping </h2>
+					<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					<div class="text-center mt-5p">
+						<a href="#" target="" class="button"> Find out more </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-span-2 p-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full  ">
+		</div>
+
+		<div class="col-span-2 p-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full ">
+		</div>
+
+	</div>
+
+</div>

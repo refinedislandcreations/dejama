@@ -30,7 +30,7 @@
     }
 
     p {
-        @apply font-sans-serif leading-6;
+        @apply leading-6;
     }
 
     a {
@@ -49,13 +49,12 @@ html {
       }
 
 
-
-
 /* For regular laptops and smaller screens */
 body {
     max-width: 100%; /* Allow it to expand to the full width of the screen */
-    background-color: #001410; 
-    color:  #EEE0CB; 
+    background-color: #F5F5F5; 
+    color:  #141201; 
+    font-family: "Josefin Sans";
 }
 
 /* For larger screens like flatscreen TVs */
@@ -68,6 +67,18 @@ body {
 
 
 /* ----------- FONT WEIGHT AND ITALICS  --------- */
+
+.text-light {
+  color: #F5F5F5; 
+}
+
+.bg-grey {
+  background-color: #D9D9D9; 
+}
+
+.bg-beige {
+  background-color: #a0946a; 
+}
 
 .font-thin {
   font-family: "Josefin Sans", sans-serif;
@@ -98,3 +109,52 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
   }
+
+
+/*-----------Bouncing Ball------------------*/
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bottom-5p {
+  bottom: 5%;
+}
+
+.w-8 {
+  width: 2rem/* 32px */;
+}
+
+.h-8 {
+  height: 2rem/* 32px */;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bouncing-animation{
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {translate: 0 0;}
+  to { translate: 0 -1rem;}
+}
+
+
+/*---------Button--------------*/
+
+.button {
+  padding: 0.5rem 2rem;
+  background-color: #3D4536;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  appearance: none;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
