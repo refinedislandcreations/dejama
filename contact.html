@@ -22,3 +22,78 @@ seo:
     </div>
 
 </section>
+
+
+<!-------------CONTACT FORM--------------------->
+
+<div class="grid grid-cols-2">
+
+	<!------Contact form----->
+
+	<div class="col-span-1">
+
+		<p class="text-8xl font-semibold uppercase tracking-wider"> Contact us <p>
+		
+		<p> Please don’t hesitate to contact us. </p>
+
+		<form name="contact" method="POST" data-netlify="true" class="grid gap-4 max-w-2xl mx-auto">
+
+			<input 
+				type="text" name="name" id="name" placeholder="Name" aria-label="Name"
+				class="outline-none py-1 pl-[2%] placeholder:text-[#839788] placeholder:uppercase placeholder:tracking-widest text-[#EEE0CB] uppercase border-b border-b-[#839788] bg-[#001410]"/>
+			
+			<input 
+				type="email" name="email" id="email" placeholder="Email" aria-label="Email"
+				class="outline-none py-1 pl-[2%]  bg-[#001410] placeholder:text-[#839788] placeholder:uppercase placeholder:tracking-widest text-[#EEE0CB] uppercase border-b border-b-[#839788]"/>
+			
+			<div>
+				<label for="message" class="uppercase tracking-widest block text-[#839788] pl-[2%]"> Message </label>
+				<textarea rows="8" name="message" id="message" class="py-1 w-full  bg-[#001410] text-[#EEE0CB] outline-none border uppercase tracking-widest border-[#839788] pt-[2%] pl-[2%]"></textarea>
+			</div>
+		
+			<input type="hidden" name="form-name" value="contact">
+		
+			<div class="flex justify-center sm:justify-end">
+				<button type="submit" class="button uppercase border bg-[#003f31] hover:bg-[#47544a] hover:text-[#EEE0CB] sm:ml-auto"> Send </button>
+			</div>
+		   
+			</form>
+		
+
+	</div>
+
+
+</div>
+
+
+
+
+
+<!----Contact Form----->
+
+<section class="pb-5p px-5p">
+
+    <form name="contact" method="POST" data-netlify="true" class="grid gap-4 max-w-2xl mx-auto">
+
+    <input 
+        type="text" name="name" id="name" placeholder="Name" aria-label="Name"
+        class="outline-none py-1 pl-[2%] placeholder:text-[#839788] placeholder:uppercase placeholder:tracking-widest text-[#EEE0CB] uppercase border-b border-b-[#839788] bg-[#001410]"/>
+    
+    <input 
+        type="email" name="email" id="email" placeholder="Email" aria-label="Email"
+        class="outline-none py-1 pl-[2%]  bg-[#001410] placeholder:text-[#839788] placeholder:uppercase placeholder:tracking-widest text-[#EEE0CB] uppercase border-b border-b-[#839788]"/>
+    
+    <div>
+        <label for="message" class="uppercase tracking-widest block text-[#839788] pl-[2%]"> Message </label>
+        <textarea rows="8" name="message" id="message" class="py-1 w-full  bg-[#001410] text-[#EEE0CB] outline-none border uppercase tracking-widest border-[#839788] pt-[2%] pl-[2%]"></textarea>
+    </div>
+
+    <input type="hidden" name="form-name" value="contact">
+
+    <div class="flex justify-center sm:justify-end">
+        <button type="submit" class="button uppercase border bg-[#003f31] hover:bg-[#47544a] hover:text-[#EEE0CB] sm:ml-auto"> Send </button>
+    </div>
+   
+    </form>
+
+</section>
