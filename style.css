@@ -8,10 +8,6 @@
 
 @layer base {
 
-    h1, h2, h3, h4  {
-        @apply mb-[0.5em];
-    }
-
     h1 {
         @apply text-3xl leading-tight;
     }
@@ -120,7 +116,7 @@ body {
   cursor: pointer;
   display: inline-block;
   right: 5%;
-  top: calc(11vw + 0rem);
+  top: calc(4vw + 0rem);
   z-index: 1000;
   position: fixed;
 }
@@ -296,7 +292,3 @@ body {
   background-image: url('https://source.unsplash.com/2s6ORaJY6gI');
 }
 
-.bg-img-5 {
-  background-image: url('/images/temp-landscape.jpg');
-  min-height: 40vh;
-}
