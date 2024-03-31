@@ -136,6 +136,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+
 .hamburger-menu.active span:first-child {
   transform: translateY(8px) rotate(45deg);
 }
@@ -237,7 +238,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   appearance: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -312,10 +313,6 @@ body {
 
 /* Accordion */
 
-.accordion{
-  background-color: #697d6f;
-  color: #EEE0CB;
-}
 
 .accordion .dt a {
   padding-left: 5%;
@@ -323,7 +320,6 @@ body {
   padding-bottom: 3%;
   margin: 0.25rem 0;
   display:block;
-  color: #EEE0CB;
   position: relative;
   text-decoration: none;
 }
@@ -351,4 +347,13 @@ body {
 .open::after {
   transform: rotateZ(45deg);
   /*right: 0; */
+}
+
+.accordion-drop {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion .dt a::after {
+  top: 2.5rem;
+  right: 4rem;
 }
