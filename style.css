@@ -250,9 +250,7 @@ body {
 
 /* Responsive Image Utility Classes  */
 .gallery-bg-image {
-	background-color: rgb(240,240,240);
-  background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
-  background-size: cover; 
+	background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
 }
@@ -277,18 +275,80 @@ body {
 
 /* Gallery - Background Images  */
 .bg-img-1 {
-  background-image: url('https://source.unsplash.com/U3aF7hgUSrk');
+  background-image: url(/images/temp-landscape.jpg) ;
 }
 
 .bg-img-2 {
-  background-image: url('https://source.unsplash.com/TzjMd7i5WQI');
+  background-image: url(/images/temp-portrait.jpg);
 }
 
-.bg-img-3 {
-  background-image: url('https://source.unsplash.com/2pbnDRhXc6Q');
+
+
+.subtle {
+  opacity: 0.5;
 }
 
-.bg-img-4 {
-  background-image: url('https://source.unsplash.com/2s6ORaJY6gI');
+.fa-regular,
+.fa-solid,
+.fa-brands {
+  font-size: 1.3rem;
 }
 
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Accordion */
+
+.accordion{
+  background-color: #697d6f;
+  color: #EEE0CB;
+}
+
+.accordion .dt a {
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0.25rem 0;
+  display:block;
+  color: #EEE0CB;
+  position: relative;
+  text-decoration: none;
+}
+
+.accordion .dd {
+  padding: 0.5rem;
+}
+
+/* Icon */
+.accordion .dt a::after {
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  font-size: 1.5rem;
+  content: "+";
+  /*right: 0; */
+}  
+
+.open::after {
+  transform: rotateZ(45deg);
+  /*right: 0; */
+}
