@@ -45,7 +45,7 @@ seo:
 
 	<div class="max-w-screen-2xl mx-auto grid grid-cols-7">
 
-		<div class="col-span-1 relative flex justify-center items-center">
+		<div class="col-span-1 relative flex justify-center items-start">
 			<h4 class="[writing-mode:vertical-rl] rotate-180 text-8xl font-semibold uppercase tracking-wider m-0 p-0"> Lodging </h4>
 		</div>
 
@@ -102,40 +102,42 @@ seo:
 <!----------------PROPERTY----------------->
 
 <div class="py-10p px-2p" id="property">
+    <h4 class="text-8xl font-semibold uppercase tracking-wider"> The Property </h4>
+    <p> Here are some images and impressions of our beautiful property. Please click on the images to enlarge them. </p>
 
-	<h4 class="text-8xl font-semibold uppercase tracking-wider"> The Property </h3>
+    <div class="gallery grid grid-cols-6 grid-rows-4 gap-2p" id="lightgallery">
+        <!-- Image 1 -->
+        <a class="col-span-6 row-span-1" href="/images/temp-landscape.jpg" aria-label="">
+            <div class="bg-img-1 gallery-bg-image min-h-40 flex justify-center items-center"></div>
+        </a>
 
-	<p> Here are some images and impressions of our beautiful property. Please click on the images to enlarge them. </p>
+        <!-- Image 2 -->
+        <a class="col-span-2 row-span-2" href="/images/temp-portrait.jpg" aria-label="">
+            <div class="bg-img-2 gallery-bg-image min-h-80 flex justify-center items-center"></div>
+        </a>
 
-	<div class="gallery grid grid-cols-6 grid-rows-4" id="lightgallery">
-		
-		<a class="col-span-6 row-span-1" href="/images/temp-landscape.jpg" aria-label="">
-			<div class="bg-img-1 gallery-bg-image pb-10p min-h-40"></div>
-		</a> 
+        <!-- Image 3 -->
+        <a class="col-span-4" href="/images/temp-landscape.jpg" aria-label="">
+            <div class="bg-img-1 gallery-bg-image min-h-40 flex justify-center items-center"></div>
+        </a>
 
-		<a class="col-span-2 row-span-2" href="/images/temp-portrait.jpg" aria-label="">
-			<div class="bg-img-2 gallery-bg-image min-h-80"></div>
-		</a> 
+        <!-- Image 4 -->
+        <a class="col-span-2" href="/images/temp-portrait.jpg" aria-label="">
+            <div class="bg-img-2 gallery-bg-image min-h-40 flex justify-center items-center"></div>
+        </a>
 
-		<a class="col-span-4" href="/images/temp-landscape.jpg" aria-label="">
-			<div class="bg-img-1 gallery-bg-image pb-10p min-h-40"></div>
-		</a> 
+        <!-- Image 5 -->
+        <a class="col-span-2 row-span-2" href="/images/temp-portrait.jpg" aria-label="">
+            <div class="bg-img-2 gallery-bg-image min-h-80 flex justify-center items-center"></div>
+        </a>
 
-		<a class="col-span-2" href="/images/temp-portrait.jpg" aria-label="">
-			<div class="bg-img-2 gallery-bg-image pb-10p min-h-40"></div>
-		</a> 
-
-		<a class="col-span-2 row-span-2" href="/images/temp-portrait.jpg" aria-label="">
-			<div class="bg-img-2 gallery-bg-image min-h-80"></div>
-		</a> 
-
-		<a class="col-span-4" href="/images/temp-landscape.jpg" aria-label="">
-			<div class="bg-img-1 gallery-bg-image pb-10p min-h-40"></div>
-		</a> 
-
-	  </div>
-
+        <!-- Image 6 -->
+        <a class="col-span-4" href="/images/temp-landscape.jpg" aria-label="">
+            <div class="bg-img-1 gallery-bg-image min-h-40 flex justify-center items-center"></div>
+        </a>
+    </div>
 </div>
+
 
 
 
@@ -170,7 +172,7 @@ seo:
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
-				<h2 class="p-5p uppercase"> Breakfast </h2>
+				<h2 class="p-5p py-10p uppercase text-2xl"> Breakfast </h2>
 				<p class="px-5p  pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			
 			</div>
@@ -196,7 +198,7 @@ seo:
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
-				<h2 class="p-5p uppercase"> Lunch </h2>
+				<h2 class="p-5p py-10p uppercase text-2xl"> Lunch </h2>
 				<p class="px-5p pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			
 			</div>
@@ -222,7 +224,7 @@ seo:
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
-				<h2 class="p-5p uppercase"> Dinner </h2>
+				<h2 class="p-5p py-10p uppercase text-2xl"> Dinner </h2>
 				<p class="px-5p pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			
 			</div>
@@ -245,16 +247,16 @@ seo:
 
 	<div class="max-w-screen-2xl mx-auto grid grid-cols-7 grid-rows-2">
 	
-		<div class="col-span-1 row-span-2 relative flex justify-center items-center">
+		<div class="col-span-1 row-span-2 relative flex justify-center items-start">
 			<h4 class="[writing-mode:vertical-rl] rotate-180 text-8xl font-semibold uppercase tracking-wider m-0 p-0"> Activities </h4>
 		</div>
 
 		<!-------Picnic---------->
 
-		<div class="col-span-3 justify-center p-5p">
+		<div class="col-span-3 justify-center pr-2p pb-2p">
 			<div class="aspect-square max-h-96 img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
 				<div class="flex items-center justify-center absolute inset-0">
-					<h3 class="text-light"> Picnic </h3>
+					<h3 class="text-light uppercase text-2xl"> Picnic </h3>
 				</div>
 			</div>
 		</div>
@@ -264,7 +266,7 @@ seo:
 		<div class="col-span-3 justify-center p-5p">
 			<div class="aspect-square max-h-96 img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
 				<div class="flex items-center justify-center absolute inset-0">
-					<h3 class="text-light"> Spa </h3>
+					<h3 class="text-light uppercase text-2xl"> Spa </h3>
 				</div>
 			</div>
 		</div>
@@ -274,7 +276,7 @@ seo:
 		<div class="col-span-3 justify-center p-5p">
 			<div class="aspect-square max-h-96 img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
 				<div class="flex items-center justify-center absolute inset-0">
-					<h3 class="text-light"> Spa </h3>
+					<h3 class="text-light uppercase text-2xl"> Spa </h3>
 				</div>
 			</div>
 		</div>
@@ -284,13 +286,12 @@ seo:
 		<div class="col-span-3 justify-center p-5p">
 			<div class="aspect-square max-h-96 img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
 				<div class="flex items-center justify-center absolute inset-0">
-					<h3 class="text-light"> Cooking </h3>
+					<h3 class="text-light uppercase text-2xl"> Cooking </h3>
 				</div>
 			</div>
 		</div>
 	
 
-</div>
 </div>
 
 <p class="text-center"> Reach out directly to get more information about our activities and book. </p>
@@ -298,6 +299,11 @@ seo:
 <div class="text-center mt-5p">
 	<a href="/contact.html" target="" class="button"> Get in touch today </a>
 </div>	
+
+
+</div>
+
+
 
 
 
@@ -319,7 +325,7 @@ seo:
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
 		<div class="col-span-2">
-			<h4 class="p-5p uppercase"> Garden </h2>
+			<h4 class="p-5p py-10p uppercase text-2xl"> Garden </h2>
 			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
 
@@ -333,7 +339,7 @@ seo:
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
 		<div class="col-span-4">
-			<h4 class="p-5p uppercase"> Solar Power </h2>
+			<h4 class="p-5p py-10p uppercase text-2xl"> Solar Power </h2>
 			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
 
@@ -344,7 +350,7 @@ seo:
 	<div class="grid grid-cols-4 pt-5p">
 	
 		<div class="col-span-2">
-			<h4 class="p-5p uppercase"> Container Buildings </h2>
+			<h4 class="p-5p py-10p uppercase text-2xl"> Container Buildings </h2>
 			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
 

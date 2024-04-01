@@ -655,6 +655,9 @@ a {
 .justify-between {
   justify-content: space-between;
 }
+.gap-2p {
+  gap: 2%;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -1002,7 +1005,7 @@ body {
 /*---------Button--------------*/
 
 .button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: #3D4536;
   color: #F5F5F5;
   text-transform: uppercase;
@@ -1026,6 +1029,8 @@ body {
 	background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Aspect Ratio  */
@@ -1041,10 +1046,11 @@ body {
 .g-bg-pos-l { background-position: left; }
 .g-bg-pos-r { background-position: right; }
 
-
+/*
 .gallery [class*="col-"] {
   padding: 0.5%;
 }
+*/
 
 /* Gallery - Background Images  */
 .bg-img-1 {
