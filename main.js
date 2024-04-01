@@ -35,3 +35,23 @@ var allPanels = $('.accordion > .dd').hide();
 
    return false; 
 	});
+
+
+
+
+var allPanels = $('.accordion-index > .dd-index').hide();
+
+	$('.accordion-index > .dt-index > a').click(function() {
+		// allPanels.slideUp();
+
+        
+   // $(this).filter('.open').removeClass('open').addClass('closing')
+   // $('.accordion > .dt > a').removeClass('open');
+ // $(this).not(".closing").addClass('open').parent().next().slideDown();
+   // $('.accordion > .dt > a').removeClass('closing');
+    
+   $(this).toggleClass('open') 
+   $(this).parent().next().slideToggle() 
+
+   return false; 
+	});

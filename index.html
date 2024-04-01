@@ -327,9 +327,15 @@ seo:
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
-		<div class="col-span-2">
-			<h4 class="p-5p py-10p uppercase text-2xl"> Garden </h2>
-			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<div class="col-span-2 flex flex-col h-full justify-end">
+			<h4 class="p-5p uppercase text-2xl"> Garden </h4>
+			<p class="px-5p pb-5p"> We grow our own vegetables and herbs for the restaurant, showing our dedication to providing you with fresh, locally sourced ingredients. </p>
+		</div>
+
+			<!------Drop down----->
+
+		<div class="col-span-full">
+				{% include accordion-garden.html %}
 		</div>
 
 	</div>
@@ -341,9 +347,15 @@ seo:
 
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
-		<div class="col-span-4">
-			<h4 class="p-5p py-10p uppercase text-2xl"> Solar Power </h2>
-			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<div class="col-span-4 flex flex-col h-full justify-end">
+			<h4 class="p-5p uppercase text-2xl"> Solar Power </h2>
+			<p class="px-5p pb-5p"> Solar solar solar Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+		</div>
+
+			<!------Drop down----->
+
+		<div class="col-span-full">
+			{% include accordion-solar.html %}
 		</div>
 
 	</div>
@@ -352,15 +364,20 @@ seo:
 
 	<div class="grid grid-cols-4 pt-5p">
 	
-		<div class="col-span-2">
-			<h4 class="p-5p py-10p uppercase text-2xl"> Container Buildings </h2>
-			<p class="px-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		<div class="col-span-2 flex flex-col h-full justify-end">
+			<h4 class="p-5p uppercase text-2xl"> Container Buildings </h2>
+			<p class="px-5p pb-5p"> Container container container Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
 		</div>
 
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 	
 	</div>
+			
+			<!------Drop down----->
 
+		<div class="col-span-full">
+				{% include accordion-container.html %}
+		</div>
 	
 </div>
