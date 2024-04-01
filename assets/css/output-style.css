@@ -325,26 +325,6 @@ video {
 [hidden] {
   display: none;
 }
-h1 {
-  font-size: 1.875rem;
-  line-height: .85;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: .85;
-}
-h3 {
-  font-size: 1.25rem;
-  font-size: 1.125rem;;
-  line-height: .85;
-}
-h4 {
-  font-size: 1.125rem;;
-  line-height: .85;
-}
-p {
-  line-height: 1.5rem;
-}
 a {
   text-decoration-line: none;
 }
@@ -544,9 +524,6 @@ a {
 .size-28 {
   width: 7rem;
   height: 7rem;
-}
-.h-11 {
-  height: 2.75rem;
 }
 .h-8 {
   height: 2rem;
@@ -775,6 +752,10 @@ a {
 .text-lg {
   font-size: 1.125rem;;
   line-height: 1.2;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .font-medium {
   font-weight: 500;

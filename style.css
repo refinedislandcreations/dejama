@@ -8,27 +8,6 @@
 
 @layer base {
 
-    h1 {
-        @apply text-3xl leading-tight;
-    }
-    h2 {
-        @apply text-2xl leading-tight;
-    }
-    h3 {
-        @apply text-xl leading-tight;
-    }
-
-    h3 {
-        @apply text-lg leading-tight;
-    }
-    h4 {
-        @apply text-lg leading-tight;
-    }
-
-    p {
-        @apply leading-6;
-    }
-
     a {
         @apply no-underline;
     }
