@@ -54,10 +54,10 @@ seo:
 
 <div class="bg-grey py-10p">
 
-	<div class="max-w-screen-2xl mx-auto grid grid-cols-7">
+	<div class="max-w-screen-2xl mx-auto md:grid md:grid-cols-7">
 
-		<div class="col-span-1 relative flex justify-center items-start">
-			<h4 class="[writing-mode:vertical-rl] rotate-180 text-8xl font-semibold uppercase tracking-wider m-0 p-0"> Lodging </h4>
+		<div class="col-span-1 relative md:flex md:justify-center md:items-start">
+			<h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-4xl sm:text-8xl font-semibold uppercase m-0 pl-2p md:pl-0 md:p-0"> Lodging </h4>
 		</div>
 
 		<div class="col-span-2 p-5p relative">
@@ -113,7 +113,7 @@ seo:
 <!----------------PROPERTY----------------->
 
 <div class="py-10p px-2p" id="property">
-    <h4 class="text-8xl font-semibold uppercase tracking-wider"> The Property </h4>
+    <h4 class="uppercase text-4xl sm:text-8xl font-semibold"> The Property </h4>
     <p class="pb-5p"> Here are some images and impressions of our beautiful property. Please click on the images to enlarge them. </p>
 
     <div class="gallery grid grid-cols-6 grid-rows-4 gap-gallery" id="lightgallery">
@@ -157,29 +157,37 @@ seo:
 
 <div class="bg-grey py-10p px-2p" id="restaurant">
 
-	<h4 class="text-8xl font-semibold uppercase tracking-wider"> The Restaurant </h3>
+	<h4 class="text-4xl sm:text-8xl font-semibold uppercase pl-2p md:pl-0"> The Restaurant </h3>
 
 	<p class="pb-5p"> At Dejama Glamping Resort, we believe in the power of fresh, locally sourced ingredients to elevate your culinary experience. That's why we take pride in our commitment to sustainability and the environment by sourcing all of our restaurant ingredients from our own garden and local farms. </p>
 
 	<!----------->
 
-	<div class="grid grid-cols-5">
+	<div class="grid grid-cols-2 md:grid-cols-5">
 
 	<!-----Breakfast------>
 
 	<div class="col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-1">
+	<div class="hidden md:block col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-3">
+	<div class="col-span-1 md:hidden">
+		<div>
+			<h2 class="p-5p uppercase text-2xl"> Breakfast </h2>
+			<p class="px-5p  pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		
+		</div>
+	</div>
+
+	<div class="hidden md:block col-span-3">
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
@@ -195,17 +203,25 @@ seo:
 
 	<div class="col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-1">
+	<div class="hidden md:block col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-3">
+	<div class="col-span-1 md:hidden">
+		<div>
+			<h2 class="p-5p uppercase text-2xl"> Lunch </h2>
+			<p class="px-5p  pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		
+		</div>
+	</div>
+
+	<div class="hidden md:block col-span-3">
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
@@ -221,17 +237,25 @@ seo:
 
 	<div class="col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-1">
+	<div class="hidden md:block col-span-1">
 		<div>
-			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full pr-2p pb-5p">
+			<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full md:pr-2p pb-5p">
 		</div>
 	</div>
 
-	<div class="col-span-3">
+	<div class="col-span-1 md:hidden">
+		<div>
+			<h2 class="p-5p uppercase text-2xl"> Dinner </h2>
+			<p class="px-5p  pb-5p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		
+		</div>
+	</div>
+
+	<div class="hidden md:block col-span-3">
 
 		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
 			<div class="bg-beige z-50 relative">
@@ -251,17 +275,16 @@ seo:
 
 
 
-<!----------------Activities----------------->
+<!----------------Activities--------->
 
-
-<div class="py-10p" id="activities">
-    <div class="max-w-screen-2xl mx-auto grid grid-cols-7 grid-rows-2">
-        <div class="col-span-1 row-span-2 relative flex justify-center items-start">
-            <h4 class="[writing-mode:vertical-rl] rotate-180 text-8xl font-semibold uppercase tracking-wider m-0 p-0"> Activities </h4>
+<div class="py-10p " id="activities">
+    <div class="max-w-screen-2xl mx-auto grid grid-cols-2 md:grid-cols-7 md:grid-rows-2">
+        <div class="col-span-2 md:col-span-1 md:row-span-2 md:relative md:flex md:justify-center md:items-start">
+            <h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-4xl sm:text-8xl font-semibold uppercase m-0 pl-2p md:pl-0 md:p-0"> Activities </h4>
         </div>
 
-        <!-- Picnic -->
-        <div class="col-span-3 justify-center pr-1p pb-2p">
+        <!--- Picnic -->
+        <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p">
             <div class="aspect-square img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
                 <div class="flex items-center justify-center absolute inset-0">
                     <h3 class="text-light uppercase text-2xl"> Picnic </h3>
@@ -269,8 +292,8 @@ seo:
             </div>
         </div>
 
-        <!-- Yoga -->
-        <div class="col-span-3 justify-center pb-2p pl-1p">
+        <!--- Yoga -->
+        <div class="col-span-1 md:col-span-3 justify-center pb-2p pl-1p">
             <div class="aspect-square img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
                 <div class="flex items-center justify-center absolute inset-0">
                     <h3 class="text-light uppercase text-2xl"> Spa </h3>
@@ -278,8 +301,10 @@ seo:
             </div>
         </div>
 
-        <!-- Spa -->
-        <div class="col-span-3 justify-center pr-1p pb-2p">
+
+
+         <!------ Spa -->
+        <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p">
             <div class="aspect-square img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
                 <div class="flex items-center justify-center absolute inset-0">
                     <h3 class="text-light uppercase text-2xl"> Spa </h3>
@@ -287,8 +312,8 @@ seo:
             </div>
         </div>
 
-        <!-- Yoga -->
-        <div class="col-span-3 justify-center pb-2p pl-1p">
+       <!----- Yoga -->
+        <div class="col-span-1 md:col-span-3 justify-center pb-2p pl-1p">
             <div class="aspect-square img-height bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
                 <div class="flex items-center justify-center absolute inset-0">
                     <h3 class="text-light uppercase text-2xl"> Cooking </h3>
@@ -296,13 +321,18 @@ seo:
             </div>
         </div>
     </div>
+
+
+	<p class="text-center pt-5p pb-2p"> Reach out directly to get more information about our activities and book. </p>
+
+	<div class="text-center ">
+		<a href="/contact.html" target="" class="button"> Get in touch today </a>
+	</div>
+
 </div>
 
-<p class="text-center"> Reach out directly to get more information about our activities and book. </p>
 
-<div class="text-center mt-5p">
-    <a href="/contact.html" target="" class="button"> Get in touch today </a>
-</div>
+
 
 
 
@@ -316,17 +346,17 @@ seo:
 
 <div class="bg-grey py-10p px-2p" id="sustainability">
 
-	<h4 class="text-8xl font-semibold uppercase tracking-wider"> Sustainability </h3>
+	<h4 class="text-4xl sm:text-8xl font-semibold uppercase pl-2p md:pl-0"> Sustainability </h3>
 	
 	<!------Garden---------->
 
-	<div class="grid grid-cols-5 py-5p">
+	<div class="grid grid-cols-3 md:grid-cols-5 py-5p">
 
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
-		<div class="col-span-2 flex flex-col h-full justify-end">
+		<div class="col-span-3 md:col-span-2 flex flex-col h-full justify-end">
 			<h4 class="p-5p uppercase text-2xl"> Garden </h4>
 			<p class="px-5p pb-5p"> We grow our own vegetables and herbs for the restaurant, showing our dedication to providing you with fresh, locally sourced ingredients. </p>
 		</div>
@@ -342,7 +372,7 @@ seo:
 
 	<!------Solar Power---------->
 
-	<div class="grid grid-cols-5">
+	<div class="md:grid md:grid-cols-5">
 
 		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
 
@@ -361,7 +391,7 @@ seo:
 
 	<!------Container Buildings---------->
 
-	<div class="grid grid-cols-4 pt-5p">
+	<div class="md:grid md:grid-cols-4 pt-5p">
 	
 		<div class="col-span-2 flex flex-col h-full justify-end">
 			<h4 class="p-5p uppercase text-2xl"> Container Buildings </h2>
