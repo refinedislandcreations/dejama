@@ -40,9 +40,9 @@ seo:
 
 <!----------------INTRO BANNER----------------->
 
-<div class="p-10p">
+<div class="py-10p px-2p sm:p-10p">
 
-	<h1 class="text-center uppercase text-2xl pb-2p"> Welcome to Dejama Glamping Resort, Lombok. </h1>
+	<h1 class="text-center uppercase text-2xl pb-5p sm:pb-2p"> Welcome to Dejama Glamping Resort, Lombok. </h1>
 
 	<p class="text-center text-balance"> From the tranquil rustle of leaves to the starlit skies above, every detail has been crafted to immerse you in a world of comfort and wonder. </p>
 
@@ -58,9 +58,51 @@ seo:
 
 		<div class="col-span-1 relative md:flex md:justify-center md:items-start">
 			<h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-4xl sm:text-8xl font-semibold uppercase m-0 pl-2p md:pl-0 md:p-0"> Lodging </h4>
+			<p class="md:hidden pl-2p"> We have 3 different types of lodging. </p>
 		</div>
 
-		<div class="col-span-2 p-5p relative">
+		<!----------------For small screens----------------->	
+		<div class="md:hidden">
+
+			<div class="mb-5p">
+				<div class="w-full min-h-20 bg-cover relative imgContainer" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
+					<div class="absolute inset-y-0 inset-x-1/2 bottom-0 imgOverlay">
+						<h2 class="px-2p py-10p uppercase text-2xl"> Glamping </h2>
+						<p class="px-2p"> Lorem ipsum </p>
+					</div>
+				</div>
+			</div>
+
+		</div>	
+
+		<div class="md:hidden">
+
+			<div class="mb-5p">
+				<div class="w-full min-h-20 bg-cover relative imgContainer" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
+					<div class="absolute inset-y-0 inset-x-1/2 bottom-0 imgOverlay">
+						<h2 class="px-2p py-10p uppercase text-2xl"> Bungalow </h2>
+						<p class="px-2p"> Lorem ipsum </p>
+					</div>
+				</div>
+			</div>
+
+		</div>	
+
+		<div class="md:hidden">
+
+			<div class="mb-5p">
+				<div class="w-full min-h-20 bg-cover relative imgContainer" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
+					<div class="absolute inset-y-0 inset-x-1/2 bottom-0 imgOverlay">
+						<h2 class="px-2p py-10p uppercase text-2xl"> Twin Cabin </h2>
+						<p class="px-2p"> Lorem ipsum </p>
+					</div>
+				</div>
+			</div>
+
+		</div>	
+
+		<!----------------For large screens----------------->
+		<div class="hidden md:block col-span-2 p-5p relative">
 			<div>
 				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
 			</div>
@@ -76,7 +118,7 @@ seo:
 			</div>
 		</div>
 
-		<div class="col-span-2 p-5p relative">
+		<div class="hidden md:block col-span-2 p-5p relative">
 			<div>
 				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
 			</div>
@@ -92,7 +134,7 @@ seo:
 			</div>
 		</div>
 
-		<div class="col-span-2 p-5p relative">
+		<div class="hidden md:block col-span-2 p-5p relative">
 			<div>
 				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
 			</div>
@@ -117,21 +159,21 @@ seo:
 
 <div class="py-10p px-2p" id="property">
     <h4 class="uppercase text-4xl sm:text-8xl font-semibold"> The Property </h4>
-    <p class="pb-5p"> Our oasis is nestled within the natural beauty of South Lombok. The proximity to Dondon Beach, just a short 800-meter walk away, offers our  guests a wonderful opportunity to immerse themselves in the stunning coastal environment.Whether it's lounging on the beach, surfing the waves, or exploring the surrounding area.</p>		 
+    <p class="pb-5p text-balance"> Our oasis is nestled within the natural beauty of South Lombok. The proximity to Dondon Beach, just a short 800-meter walk away, offers our  guests a wonderful opportunity to immerse themselves in the stunning coastal environment.Whether it's lounging on the beach, surfing the waves, or exploring the surrounding area.</p>		 
 
-    <div class="gallery grid grid-cols-6 grid-rows-4 gap-gallery" id="lightgallery">
+    <div class="gallery grid grid-cols-6 sm:grid-rows-4 gap-gallery" id="lightgallery">
         <!-- Image 1 -->
-        <a class="col-span-6 row-span-1" href="/images/temp-landscape.jpg" aria-label="">
-            <div class="bg-img-1 gallery-bg-image min-h-40 flex justify-center items-center"></div>
+        <a class="col-span-6 sm:row-span-1" href="/images/temp-landscape.jpg" aria-label="">
+            <div class="bg-img-1 gallery-bg-image min-h-30 sm:min-h-40 flex justify-center items-center"></div>
         </a>
 
         <!-- Image 2 -->
-        <a class="col-span-2 row-span-2" href="/images/temp-portrait.jpg" aria-label="">
+        <a class="col-span-3 sm:col-span-2 sm:row-span-2" href="/images/temp-portrait.jpg" aria-label="">
             <div class="bg-img-2 gallery-bg-image min-h-80 flex justify-center items-center"></div>
         </a>
 
         <!-- Image 3 -->
-        <a class="col-span-4" href="/images/temp-landscape.jpg" aria-label="">
+        <a class="col-span-3 sm:col-span-4" href="/images/temp-landscape.jpg" aria-label="">
             <div class="bg-img-1 gallery-bg-image min-h-40 flex justify-center items-center"></div>
         </a>
 
@@ -394,7 +436,7 @@ seo:
 
 	<!------Container Buildings---------->
 
-	<div class="md:grid md:grid-cols-4 pt-5p">
+	<div class="md:grid gap-1 md:grid-cols-4 pt-5p">
 	
 		<div class="col-span-2 flex flex-col h-full justify-end">
 			<h4 class="p-5p uppercase text-2xl"> Container Buildings </h2>
