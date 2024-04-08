@@ -387,6 +387,18 @@ body {
 
 }
 
+@media (min-width:1125px) {
+  .accordion-index .dt-index a::after {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+.accordion-index .dt-index a {
+  padding-left: 62%;
+}
+
+}
+
 
 /* Icon */
 .accordion-index .dt-index a::after {
