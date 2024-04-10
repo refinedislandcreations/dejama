@@ -516,12 +516,6 @@ a {
 .col-span-full {
   grid-column: 1 / -1;
 }
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
 .m-0 {
   margin: 0px;
 }
@@ -597,6 +591,12 @@ a {
 .min-h-20 {
   min-height: 20vh;
 }
+.min-h-25 {
+  min-height: 25vh;
+}
+.min-h-30 {
+  min-height: 30vh;
+}
 .min-h-40 {
   min-height: 40vh;
 }
@@ -605,9 +605,6 @@ a {
 }
 .min-h-60 {
   min-height: 60vh;
-}
-.min-h-80 {
-  min-height: 80vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -646,14 +643,14 @@ a {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -738,6 +735,9 @@ a {
 }
 .pr-1p {
   padding-right: 1%;
+}
+.pr-2p {
+  padding-right: 2%;
 }
 .pr-5p {
   padding-right: 5%;
@@ -1246,6 +1246,21 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  .sm\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+  .sm\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+  .sm\:block {
+    display: block;
+  }
   .sm\:hidden {
     display: none;
   }
@@ -1253,17 +1268,42 @@ body {
     width: 15rem;
     height: 15rem;
   }
+  .sm\:min-h-40 {
+    min-height: 40vh;
+  }
+  .sm\:min-h-80 {
+    min-height: 80vh;
+  }
   .sm\:w-36 {
     width: 9rem;
   }
   .sm\:w-48 {
     width: 12rem;
   }
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .sm\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
   .sm\:p-10p {
     padding: 10%;
   }
+  .sm\:px-5p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .sm\:pb-2p {
     padding-bottom: 2%;
+  }
+  .sm\:pl-0 {
+    padding-left: 0px;
+  }
+  .sm\:pl-2p {
+    padding-left: 2%;
+  }
+  .sm\:pr-2p {
+    padding-right: 2%;
   }
   .sm\:pt-10p {
     padding-top: 10%;
@@ -1302,6 +1342,9 @@ body {
   .md\:hidden {
     display: none;
   }
+  .md\:min-h-50 {
+    min-height: 50vh;
+  }
   .md\:rotate-180 {
     --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1315,6 +1358,12 @@ body {
   .md\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
+  .md\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
@@ -1327,15 +1376,22 @@ body {
   .md\:p-0 {
     padding: 0px;
   }
+  .md\:p-5p {
+    padding: 5%;
+  }
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .md\:px-5p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .md\:pl-0 {
     padding-left: 0px;
   }
-  .md\:pr-2p {
-    padding-right: 2%;
+  .md\:pr-5p {
+    padding-right: 5%;
   }
   .md\:text-9xl {
     font-size: 8rem;
