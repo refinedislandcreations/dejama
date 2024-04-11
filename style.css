@@ -306,14 +306,6 @@ body {
   position: relative;
 }
 
-.google-map iframe {
-  height: 60%;
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
 
@@ -393,6 +385,28 @@ body {
 
 .accordion-index .dt-index a {
   padding-left: 2%;
+}
+
+.google-map iframe {
+  height: 120%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+}
+
+@media (min-width:640px) {
+
+.google-map iframe {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 }
