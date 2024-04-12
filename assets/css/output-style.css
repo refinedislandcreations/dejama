@@ -536,6 +536,9 @@ a {
 .mb-5p {
   margin-bottom: 5%;
 }
+.ml-15p {
+  margin-left: 15%;
+}
 .ml-2p {
   margin-left: 2%;
 }
@@ -550,6 +553,9 @@ a {
 }
 .mt-20p {
   margin-top: 20%;
+}
+.mt-5 {
+  margin-top: 1.25rem;
 }
 .mt-5p {
   margin-top: 5%;
@@ -671,11 +677,23 @@ a {
 .gap-1 {
   gap: 0.25rem;
 }
+.gap-9 {
+  gap: 2.25rem;
+}
 .text-balance {
   text-wrap: balance;
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.border {
+  border-width: 1px;
 }
 .bg-cover {
   background-size: cover;
@@ -687,8 +705,15 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .p-5p {
   padding: 5%;
+}
+.px-15p {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .px-2p {
   padding-left: 2%;
@@ -915,9 +940,8 @@ body {
 .mobile-menu {
   display: none;
   background-color: #D9D9D9;
-  color: #141201;
   padding-left: 7%;
-  padding-right: 7%;
+  padding-right: 9%;
   padding-top: 3%;
   padding-bottom: 3%;
   position: fixed;
@@ -934,15 +958,17 @@ body {
 
 .mobile-menu a {
   text-decoration: none; 
-  color: inherit; 
   padding: 2%;
   display: block;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .nav-button {
-  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
   background-color: #A0946A;
   color: #F5F5F5;
   text-transform: uppercase;
@@ -954,13 +980,17 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  line-height: 1.6; 
+  height: 2.2rem; 
+  width: 10rem; 
+  margin: 0 auto; 
 }
 
 .nav-button:hover {
-    background-color: #837954;
-    color: #F5F5F5;
-    transform: scale(1.05);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #837954;
+  color: #F5F5F5;
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -999,7 +1029,9 @@ body {
 
 /*---------Button--------------*/
 
+
 .button {
+  display: inline-block; /* Ensures button doesn't take full width */
   padding: 0.5rem 1rem;
   background-color: #3D4536;
   color: #F5F5F5;
@@ -1013,6 +1045,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  line-height: 1.6; 
+  height: 2rem; 
 }
 
 /*---------Lodging Small Screens-----------------*/
@@ -1075,6 +1109,15 @@ body {
   height: 100%;
 }
 
+.lodging-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+  max-height: 9.8em;
+}
 
 .subtle {
   opacity: 0.5;
@@ -1109,6 +1152,14 @@ body {
 .accordion .dd {
   padding: 0.5rem;
 }
+
+.accordion-property-pt {
+  padding-top: 0% !important;
+  padding-left: 70% !important;
+  padding-bottom: 0% !important;
+}
+
+
 
 /* Icon */
 .accordion .dt a::after {
@@ -1170,6 +1221,11 @@ body {
   padding-left: 2%;
 }
 
+.accordion-index .dt-index a.special-drop-down::after {
+  top: -1.7px; 
+  right: 0.5rem; 
+}
+
 .google-map iframe {
   height: 120%;
   width: 100%;
@@ -1192,6 +1248,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.accordion-index .dt-index a {
+  padding-left: 80%;
+}
+
+.accordion-index .dt-index a::after {
+  top: 1.8rem;
+  right: 4rem;
+}
+
 }
 
 @media (min-width:1125px) {
@@ -1200,9 +1265,7 @@ body {
     right: 0.5rem;
   }
 
-.accordion-index .dt-index a {
-  padding-left: 62%;
-}
+
 
 }
 
@@ -1281,9 +1344,6 @@ body {
   }
   .sm\:w-36 {
     width: 9rem;
-  }
-  .sm\:w-48 {
-    width: 12rem;
   }
   .sm\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1364,6 +1424,9 @@ body {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1385,8 +1448,14 @@ body {
   .md\:justify-center {
     justify-content: center;
   }
+  .md\:gap-1 {
+    gap: 0.25rem;
+  }
   .md\:p-0 {
     padding: 0px;
+  }
+  .md\:p-2 {
+    padding: 0.5rem;
   }
   .md\:p-5p {
     padding: 5%;

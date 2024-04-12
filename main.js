@@ -55,3 +55,9 @@ var allPanels = $('.accordion-index > .dd-index').hide();
 
    return false; 
 	});
+
+
+
+
+
+
