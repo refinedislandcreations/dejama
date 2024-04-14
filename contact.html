@@ -26,7 +26,7 @@ seo:
 
 <!-------------CONTACT FORM--------------------->
 
-<div class="md:grid md:grid-cols-2 pt-5p md:px-2p  gap-9">
+<div class="md:grid md:grid-cols-2 pt-15p sm:pt-5p md:px-2p  gap-9">
 
     <!-- Contact form -->
     <div class="col-span-1 pr-5p px-2p md:px-0 ">
@@ -47,7 +47,7 @@ seo:
 
             <input type="hidden" name="form-name" value="contact">
 
-            <div class="flex justify-center mt-5p">
+            <div class="flex justify-center mt-5p mb-10p sm:mb-0">
                 <button type="submit" class="button"> Send </button>
             </div>
 
@@ -58,12 +58,12 @@ seo:
     <!-- Picture and details -->
     <div class="col-span-1 mt-5p md:mt-0">
 
-        <img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full h-60 mb-2p">
+        <img src="/images/temp-portrait.jpg" alt="" class="hidden sm:block object-cover w-full h-60 mb-2p">
 
         <div class="md:grid md:grid-cols-3 md:gap-1">
 
-            <!-- Info Box -->
-            <div class="col-span-2 bg-beige p-3 md:p-2 mr-2p flex flex-col justify-center">
+            <!-- Info Box --> 
+            <div class="col-span-2 bg-beige p-3 md:p-2 sm:mr-2p flex flex-col justify-center">
                 <nav>
                     <a href="#" target="_blank" class="block mb-5p"> <i class="fa-regular fa-envelope mx-10p"></i> info@dejama.com </a>
                     <a href="#" target="_blank" class="block mb-5p"> <i class="fa-solid fa-phone mx-10p"></i> 2735027502472407 </a>
@@ -94,7 +94,7 @@ seo:
 
 <!------How to get here----->
 
-<div class=" pb-10p ">
+<div class="pb-5p sm:pb-10p ">
 	<h4 class="uppercase text-2xl px-2p pb-2p">How to get here</h4>
 
 
@@ -118,7 +118,7 @@ seo:
 
 	<!------By car----->
 
-	<section class="pb-2p">
+	<section class="sm:pb-2p">
 		<div>
 				{% include accordion-car.html %}
 		</div>
@@ -126,3 +126,11 @@ seo:
 
 
 </div>
+
+<!----------Image for small screens------->
+
+<div class="mt-5p">
+
+    <img src="/images/temp-portrait.jpg" alt="" class="sm:hidden object-cover w-full h-60 mb-2p">
+
+{% include whatsapp.html %}
