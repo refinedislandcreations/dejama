@@ -666,7 +666,6 @@ body {
 }
 
 @media (min-width:1280px) {
-
   .accordion-index .dt-index a::after {
     top: 2.3rem;
     right: 0.5rem;
