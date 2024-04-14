@@ -14,7 +14,7 @@ seo:
 <section class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('images/temp-landscape.jpg');">
 
 	<div class="text-center">
-		<h2 class="font-thin text-light text-6xl md:text-9xl uppercase"> Contact </h2>
+		<h2 class="font-thin text-light text-6xl sm:text-8xl md:text-9xl uppercase"> Contact </h2>
 	</div>
 
 	  <!-- small bouncing dot at the bottom of the -->
@@ -26,7 +26,7 @@ seo:
 
 <!-------------CONTACT FORM--------------------->
 
-<div class="md:grid md:grid-cols-2 pt-15p sm:pt-5p md:px-2p  gap-9">
+<div class="md:grid md:grid-cols-2 pt-15p sm:pt-10p md:px-2p  gap-9">
 
     <!-- Contact form -->
     <div class="col-span-1 pr-5p px-2p md:px-0 ">
@@ -58,12 +58,10 @@ seo:
     <!-- Picture and details -->
     <div class="col-span-1 mt-5p md:mt-0">
 
-        <img src="/images/temp-portrait.jpg" alt="" class="hidden sm:block object-cover w-full h-60 mb-2p">
-
         <div class="md:grid md:grid-cols-3 md:gap-1">
 
             <!-- Info Box --> 
-            <div class="col-span-2 bg-beige p-3 md:p-2 sm:mr-2p flex flex-col justify-center">
+            <div class="col-span-2 bg-beige p-5p md:mr-2p flex flex-col justify-center">
                 <nav>
                     <a href="#" target="_blank" class="block mb-5p"> <i class="fa-regular fa-envelope mx-10p"></i> info@dejama.com </a>
                     <a href="#" target="_blank" class="block mb-5p"> <i class="fa-solid fa-phone mx-10p"></i> 2735027502472407 </a>
@@ -71,6 +69,11 @@ seo:
                     <a href="#" target="_blank" class="block"> <i class="fa-solid fa-location-dot mx-10p"></i> DonDon </a>
                 </nav>
             </div>
+
+            <!---Picture for small screens-->
+
+            <img src="/images/temp-portrait.jpg" alt="" class="hidden sm:block object-cover w-full h-48 mt-10p">
+
 
             <!-- Picture -->
             <div class="col-span-1 hidden md:block">
@@ -86,7 +89,7 @@ seo:
 
 <!------Google Map----->
 
-<div class="flex justify-center items-center google-map my-20p md:my-0">
+<div class="flex justify-center items-center google-map my-20p sm:my-0">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15767.743475052344!2d116.2698267!3d-8.8855549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcda9f045b35d9b%3A0x5bf545e0767f113d!2zbmluxJMtbmluxJMgc3R1ZGlv!5e0!3m2!1sen!2sth!4v1711861296482!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
@@ -94,7 +97,7 @@ seo:
 
 <!------How to get here----->
 
-<div class="pb-5p sm:pb-10p ">
+<div class="pb-5p sm:pb-0 ">
 	<h4 class="uppercase text-2xl px-2p pb-2p">How to get here</h4>
 
 
@@ -131,6 +134,6 @@ seo:
 
 <div class="mt-5p">
 
-    <img src="/images/temp-portrait.jpg" alt="" class="sm:hidden object-cover w-full h-60 mb-2p">
+    <img src="/images/temp-portrait.jpg" alt="" class="md:hidden object-cover w-full h-60 mb-2p">
 
 {% include whatsapp.html %}
