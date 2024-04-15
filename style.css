@@ -96,7 +96,11 @@ body {
 
 /*-----------Navigation------------------*/
 
-
+/* Hamburger menu container */
+.hamburger-menu-container {
+  max-width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+}
 
 .hamburger-menu {
   display: flex;
