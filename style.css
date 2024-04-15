@@ -300,9 +300,12 @@ body {
 }
 
 .fa-regular,
-.fa-solid,
 .fa-brands {
   font-size: 1.3rem;
+}
+
+.fa-solid {
+  font-size: 1.1rem;
 }
 
 .google-map {
