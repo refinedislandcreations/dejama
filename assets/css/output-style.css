@@ -1285,6 +1285,56 @@ body {
 
 
 
+/* popout activities */
+
+.popupbutton {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.popupoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.popupoverlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    padding: 20px;
+    background: #a0946a;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #141201;
+  margin-right: 20px;
+}
+
+
+
 @media (min-width:300px) {
  
   .hamburger-wrapper {
