@@ -1,0 +1,28 @@
+<div class="grid grid-cols-7">	
+
+    <div class="hidden col-span-1 relative md:flex md:justify-center md:items-start">
+        <h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-7xl lg:text-8xl font-semibold uppercase m-0 pl-0 md:p-0"> Lodging </h4>
+    </div>
+
+{% for item in page.roomsbig %}
+
+<div class="hidden md:block col-span-2 p-5p relative">
+    <div>
+        <img src="{{item.image}}" class="object-cover w-full min-h-60" alt="{{item.label}}">
+    </div>
+    <div class="px-5p mt-[-10%]">
+        <div class="bg-beige z-40 relative">
+            <h2 class="px-5p py-10p uppercase text-2xl"> {{item.title}} </h2>
+            <div class="px-5p pb-10p lodging-text">
+                <p> {{item.description}}
+                </p>
+            </div>
+            <div class="text-center">
+                <a href="{{item.url}}" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+

@@ -1,0 +1,29 @@
+
+
+
+<!----------------For small screens----------------->	
+
+<div class="col-span-1 relative md:hidden">
+    <h4 class="text-4xl sm:text-7xl font-semibold uppercase m-0 pl-2p"> Lodging </h4>
+    <p class="pb-5p pl-2p pt-2p sm:pt-0"> We have 3 different types of lodging. </p>
+</div>
+
+{% for item in page.roomssmall %}
+
+<a href="{{item.url}}">
+    <div class="md:hidden">
+        <div class="mb-5p">
+            <div class="w-full min-h-20 bg-cover relative imgContainer" style="background-image: linear-gradient(rgba(160, 148, 106, 0.6), rgba(160, 148, 106, 0.9)), url({{item.image}})" aria-label="{{item.label}}">
+                <div class="absolute inset-y-0 inset-x-1/2 bottom-0 imgOverlay">
+                    <h2 class="px-2p py-10p sm:py-5p uppercase text-2xl"> {{item.title}} </h2>
+                    <ul class="list-disc ml-15p editable">
+                        <li > {{item.feature1}} </li>
+                        <li > {{item.feature2}} </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+    
+{% endfor %}

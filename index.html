@@ -5,11 +5,46 @@ banner_image: /images/temp-landscape.jpg
 banner_label: Quick description of the banner image
 property_1_background_position: 
 seo: 
- title: This should appear in the browser tab
+ title: Dejama Glamping Resort, Lombok
  description: 
  keywords: 
  social_image: 
  hide-from-google: true
+roomssmall:
+-  title: Glamping
+   url: /lodging.html#glamping
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   feature1: Sleeps 2 or 3 
+   feature2: Pool view
+-  title: Bungalow
+   url: /lodging.html#bungalow
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   feature1: Sleeps 2 
+   feature2: Garden view
+-  title: Twin Cabin
+   url: /lodging.html#cabin
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   feature1: Sleeps 2 or 4
+   feature2: Garden view 
+roomsbig:
+-  title: Glamping
+   url: /lodging.html#glamping
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Our luxurious and comfortable unique glamping tents blend in nature with today’s modern comfort. Freshen up in your private tropical outdoor bathroom. Located around the swimming pool, the glamping tents offer a balance between adventure and comfort.
+-  title: Bungalow
+   url: /lodging.html#bungalow
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Our traditionally crafted ensuite bungalows are immersed in a beautiful natural setting. Overlooking our agroforest, these rooms will cater for those seeking a peaceful getaway with a touch of local charm and modern comforts.
+-  title: Twin Cabin
+   url: /lodging.html#cabin
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: The Twin Cabin Suite is surrounded by lush gardens. It includes 2 ensuite bedrooms and a lounge designed in a recycled shipping container. Our locally sourced furnishings create a distinctive and memorable experience for guests seeking a blend of style and environmental responsibility. 
 ---
 
 <!----------------HEADER---------------------->
@@ -22,18 +57,7 @@ seo:
 				<img src="/images/dejama-logo-text-light.svg" >
 			</div>
 		</div>
-		
-		<!-------
-			<div class="text-center flex flex-col items-center justify-center">
-				<div class="size-28 ">
-					<img src="/images/dejama-logo-icon-light.svg" alt="">
-				</div>
-				<h2 class="text-light text-center uppercase text-6xl "> Dejama </h2>
-				<h2 class="text-light text-center uppercase pb-2p"> Glamping Resort Lombok </h2>
 				
-			</div>
-			------>
-			
 			<!-- small bouncing dot at the bottom of the header -->
 			<div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white w-8 h-8 rounded-full bouncing-animation">
 			</div>
@@ -62,7 +86,9 @@ seo:
 
 	<div class="max-w-screen-2xl mx-auto py-15p sm:py-10p">
 
-		<!----------------For small screens----------------->	
+		{% include rooms-small-screen.html %}
+
+		<!----------------For small screens-------
 
 		<div class="col-span-1 relative md:hidden">
 			<h4 class="text-4xl sm:text-7xl font-semibold uppercase m-0 pl-2p"> Lodging </h4>
@@ -122,70 +148,71 @@ seo:
 	
 			</div>
 		</a>
-			
+			---------->	
 
 		<!----------------For large screens----------------->
-	<div class="grid grid-cols-7">	
 
-		<div class="hidden col-span-1 relative md:flex md:justify-center md:items-start">
-			<h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-7xl lg:text-8xl font-semibold uppercase m-0 pl-0 md:p-0"> Lodging </h4>
-		</div>
+		{% include rooms-large-screen.html %}
+	
 
-		<div class="hidden md:block col-span-2 p-5p relative">
-			<div>
-				<img src="/images/temp-portrait.jpg" class="object-cover w-full min-h-60 editable" alt="Description of picture">
-			</div>
-			<div class="px-5p mt-[-10%]">
-				<div class="bg-beige z-40 relative">
-					<h2 class="px-5p py-10p uppercase text-2xl"> Glamping </h2>
-					<div class="px-5p pb-10p lodging-text">
-						<p class="editable"> Our luxurious and comfortable unique glamping tents blend in nature with today’s modern comfort. Freshen up in your private tropical outdoor bathroom. Located around the swimming pool, the glamping tents offer a balance between adventure and comfort.
-						</p>
+		<!-------turned this into a loop--------
+				<div class="hidden md:block col-span-2 p-5p relative">
+					<div>
+						<img src="/images/temp-portrait.jpg" class="object-cover w-full min-h-60 editable" alt="Description of picture">
 					</div>
-					<div class="text-center">
-						<a href="/lodging.html#glamping" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+					<div class="px-5p mt-[-10%]">
+						<div class="bg-beige z-40 relative">
+							<h2 class="px-5p py-10p uppercase text-2xl"> Glamping </h2>
+							<div class="px-5p pb-10p lodging-text">
+								<p class="editable"> Our luxurious and comfortable unique glamping tents blend in nature with today’s modern comfort. Freshen up in your private tropical outdoor bathroom. Located around the swimming pool, the glamping tents offer a balance between adventure and comfort.
+								</p>
+							</div>
+							<div class="text-center">
+								<a href="/lodging.html#glamping" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		
+				
+				
 
-		<div class="hidden md:block col-span-2 p-5p relative">
-			<div>
-				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
-			</div>
-			<div class="px-5p mt-[-10%]">
-				<div class="bg-beige z-40 relative">
-					<h2 class="px-5p py-10p uppercase text-2xl"> Bungalow </h2>
-					<div class="px-5p pb-10p lodging-text">
-						<p class="editable"> Our traditionally crafted ensuite bungalows are immersed in a beautiful natural setting. Overlooking our agroforest, these rooms will cater for those seeking a peaceful getaway with a touch of local charm and modern comforts.
-						</p>
+				<div class="hidden md:block col-span-2 p-5p relative">
+					<div>
+						<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
 					</div>
-					<div class="text-center">
-						<a href="/lodging.html#bungalow" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+					<div class="px-5p mt-[-10%]">
+						<div class="bg-beige z-40 relative">
+							<h2 class="px-5p py-10p uppercase text-2xl"> Bungalow </h2>
+							<div class="px-5p pb-10p lodging-text">
+								<p class="editable"> Our traditionally crafted ensuite bungalows are immersed in a beautiful natural setting. Overlooking our agroforest, these rooms will cater for those seeking a peaceful getaway with a touch of local charm and modern comforts.
+								</p>
+							</div>
+							<div class="text-center">
+								<a href="/lodging.html#bungalow" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="hidden md:block col-span-2 p-5p relative">
-			<div>
-				<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
-			</div>
-			<div class="px-5p mt-[-10%]">
-				<div class="bg-beige z-40 relative">
-					<h2 class="px-5p py-10p uppercase text-2xl"> Twin Cabin </h2>
-					<div class="px-5p pb-10p lodging-text">
-						<p class="editable"> The Twin Cabin Suite is surrounded by lush gardens. It includes 2 ensuite bedrooms and a lounge designed in a recycled shipping container. Our locally sourced furnishings create a distinctive and memorable experience for guests seeking a blend of style and environmental responsibility. 
-						</p>
+				<div class="hidden md:block col-span-2 p-5p relative">
+					<div>
+						<img src="/images/temp-portrait.jpg" alt="" class="object-cover w-full min-h-60">
 					</div>
-					<div class="text-center">
-						<a href="/lodging.html#cabin" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+					<div class="px-5p mt-[-10%]">
+						<div class="bg-beige z-40 relative">
+							<h2 class="px-5p py-10p uppercase text-2xl"> Twin Cabin </h2>
+							<div class="px-5p pb-10p lodging-text">
+								<p class="editable"> The Twin Cabin Suite is surrounded by lush gardens. It includes 2 ensuite bedrooms and a lounge designed in a recycled shipping container. Our locally sourced furnishings create a distinctive and memorable experience for guests seeking a blend of style and environmental responsibility. 
+								</p>
+							</div>
+							<div class="text-center">
+								<a href="/lodging.html#cabin" target="" class="button inline-block mt-5p mb-5p"> Find out more </a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+
+				------->
 	</div>
 	</div>
 
