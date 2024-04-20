@@ -880,7 +880,7 @@ body {
 
 /* For larger screens like flatscreen TVs */
 @media screen and (min-width: 1600px) {
-    body {
+    .max-width {
         max-width: 1600px; /* Set a specific max-width for larger screens */
         margin: 0 auto; /* Center the content horizontally */
     }
@@ -959,19 +959,19 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.hamburger-menu.active span {
+.open .hamburger-menu span {
   background-color: #141201; 
 }
 
-.hamburger-menu.active span:first-child {
+.open .hamburger-menu span:first-child {
   transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger-menu.active span:nth-child(2) {
+.open .hamburger-menu span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-menu.active span:last-child {
+.open .hamburger-menu span:last-child {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -1285,6 +1285,7 @@ body {
 
 
 
+
 /* popout activities */
 
 .popupbutton {
@@ -1335,32 +1336,37 @@ body {
 
 
 
-@media (min-width:300px) {
+
  
   .hamburger-wrapper {
     cursor: pointer;
     display: inline-block;
-    right: 7%;
-    top: calc(6.6vw + 0rem);
+    right: max(calc(50vw - 800px + 5%),5%);
     z-index: 1000;
     position: fixed;
+    transition: top .5s;
+    top: -2rem;
   }
+  .hamburger-wrapper.active,.hamburger-wrapper.open {
+    top: 6.6vw;
+  }
+
  
   .mobile-menu {
     display: none;
     background-color: #D9D9D9;
-    padding-left: 15%;
+    padding-left: 1.5rem;
     padding-right: 15%;
     padding-top: 15%;
     padding-bottom: 12%;
     position: fixed;
     top: 0;
-    right: 0;
+    right: max(calc(50vw - 800px), 0%);
     overflow-y: auto;
     z-index: 50;
     text-transform: uppercase;
   }
- 
+  @media (min-width:300px) {
   
 .accordion-property-pt {
   padding-top: 0% !important;
@@ -1501,7 +1507,6 @@ body {
     padding-bottom: 7%;
     position: fixed;
     top: 0;
-    right: 0;
     overflow-y: auto;
     z-index: 50;
     text-transform: uppercase;
@@ -1516,14 +1521,12 @@ body {
 }
 
 @media (min-width:1024px) {
-  .hamburger-wrapper {
-    cursor: pointer;
-    display: inline-block;
-    right: 5%;
-    top: calc(4vw + 0rem);
-    z-index: 1000;
-    position: fixed;
+
+
+  .hamburger-wrapper.active{
+    top:4.4vh;
   }
+
 
   .mobile-menu {
     display: none;
@@ -1532,9 +1535,6 @@ body {
     padding-right: 9%;
     padding-top: 7%;
     padding-bottom: 7%;
-    position: fixed;
-    top: 0;
-    right: 0;
     overflow-y: auto;
     z-index: 50;
     text-transform: uppercase;

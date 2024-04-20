@@ -1,6 +1,7 @@
 ---
 layout: default 
 title: Dejama Glamping Resort, Lombok
+banner_image: /images/temp-landscape.jpg
 seo: 
  title: This should appear in the browser tab
  description: 
@@ -11,50 +12,53 @@ seo:
 
 <!----------------HEADER---------------------->
 
-<section class="relative flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('/images/temp-landscape.jpg');">
+<section class="bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('{{page.banner_image}}');">
+	<div class="max-width relative flex justify-center items-center min-h-screen">
 
-	<div class="text-center flex flex-col items-center justify-center">
-		<div class="size-44 sm:size-60">
-            <img src="/images/dejama-logo-text-light.svg" alt="">
-        </div>
+		<div class="text-center flex flex-col items-center justify-center">
+			<div class="size-44 sm:size-60">
+				<img src="/images/dejama-logo-text-light.svg" alt="">
+			</div>
+		</div>
+		
+		<!-------
+			<div class="text-center flex flex-col items-center justify-center">
+				<div class="size-28 ">
+					<img src="/images/dejama-logo-icon-light.svg" alt="">
+				</div>
+				<h2 class="text-light text-center uppercase text-6xl "> Dejama </h2>
+				<h2 class="text-light text-center uppercase pb-2p"> Glamping Resort Lombok </h2>
+				
+			</div>
+			------>
+			
+			<!-- small bouncing dot at the bottom of the header -->
+			<div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white w-8 h-8 rounded-full bouncing-animation">
+			</div>
+			
 	</div>
-
-	<!-------
-    <div class="text-center flex flex-col items-center justify-center">
-        <div class="size-28 ">
-            <img src="/images/dejama-logo-icon-light.svg" alt="">
-        </div>
-		<h2 class="text-light text-center uppercase text-6xl "> Dejama </h2>
-		<h2 class="text-light text-center uppercase pb-2p"> Glamping Resort Lombok </h2>
-
-    </div>
-	------>
-
-    <!-- small bouncing dot at the bottom of the header -->
-    <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white w-8 h-8 rounded-full bouncing-animation">
-    </div>
-
 </section>
 
 
 
 <!----------------INTRO BANNER----------------->
 
-<div class="py-15p sm:py-10p px-2p sm:p-10p">
+<div>
+	<div class="max-width py-15p sm:py-10p px-2p sm:p-10p">
 
-	<h1 class="text-center uppercase text-2xl pb-5p sm:pb-2p editable"> Welcome to Dejama Glamping Resort, Lombok. </h1>
+		<h1 class="text-center uppercase text-2xl pb-5p sm:pb-2p editable"> Welcome to Dejama Glamping Resort, Lombok. </h1>
 
-	<p class="text-center text-balance editable"> From the tranquil rustle of leaves to the starlit skies above, every detail has been crafted to immerse you in a world of comfort and wonder. </p>
-
+		<p class="text-center text-balance editable"> From the tranquil rustle of leaves to the starlit skies above, every detail has been crafted to immerse you in a world of comfort and wonder. </p>
+	</div>
 </div>
 
 
 
 <!----------------ROOMS 3 OPTIONS----------------->
 
-<div class="bg-grey py-15p sm:py-10p ">
+<div class="bg-grey  ">
 
-	<div class="max-w-screen-2xl mx-auto">
+	<div class="max-w-screen-2xl mx-auto py-15p sm:py-10p">
 
 		<!----------------For small screens----------------->	
 

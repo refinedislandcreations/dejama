@@ -1,7 +1,11 @@
+const burger = document.querySelector('.hamburger-wrapper')
+let oldScrollHeight = 0
+
+
 $(document).ready(function() {
     $('.hamburger-wrapper').click(function() {
         $('.mobile-menu').fadeToggle(300);
-        $('.hamburger-menu').toggleClass('active');
+        $('.hamburger-wrapper').toggleClass('open');
     });
 });
 
@@ -56,8 +60,19 @@ var allPanels = $('.accordion-index > .dd-index').hide();
    return false; 
 	});
 
+  console.log('bob')
 
-
+  window.addEventListener("scroll", () => {
+    console.log(window.scrollY,'bob')
+    if (window.scrollY > oldScrollHeight ){
+      console.log('scroll down')
+      burger.classList.remove('active')
+    } else {
+      burger.classList.add('active')
+      console.log('scroll up')
+    }
+    oldScrollHeight = window.scrollY
+  });
 
 
 
