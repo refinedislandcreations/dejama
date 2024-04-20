@@ -2,6 +2,7 @@
 layout: default 
 title: Dejama Glamping Resort, Lombok
 banner_image: /images/temp-landscape.jpg
+banner_label: Quick description of the banner image
 seo: 
  title: This should appear in the browser tab
  description: 
@@ -12,12 +13,12 @@ seo:
 
 <!----------------HEADER---------------------->
 
-<section class="bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('{{page.banner_image}}');">
+<section class="bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('{{page.banner_image}}');" aria-label="{{page.banner_label}}">
 	<div class="max-width relative flex justify-center items-center min-h-screen">
 
 		<div class="text-center flex flex-col items-center justify-center">
 			<div class="size-44 sm:size-60">
-				<img src="/images/dejama-logo-text-light.svg" alt="">
+				<img src="/images/dejama-logo-text-light.svg" class="editable" alt="">
 			</div>
 		</div>
 		
