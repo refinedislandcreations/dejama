@@ -45,6 +45,25 @@ roomsbig:
    image: /images/temp-landscape.jpg
    label: Description of image
    description: The Twin Cabin Suite is surrounded by lush gardens. It includes 2 ensuite bedrooms and a lounge designed in a recycled shipping container. Our locally sourced furnishings create a distinctive and memorable experience for guests seeking a blend of style and environmental responsibility. 
+property:
+-  image_1: /images/temp-landscape.jpg
+   label_1: Description of image
+   image_1_background_position: left bottom
+-  image_2: /images/temp-landscape.jpg
+   label_2: Description of image
+   image_2_background_position: left bottom
+-  image_3: /images/temp-landscape.jpg
+   label_3: Description of image
+   image_3_background_position: left bottom
+-  image_4: /images/temp-landscape.jpg
+   label_4: Description of image
+   image_4_background_position: left bottom
+-  image_5: /images/temp-landscape.jpg
+   label_5: Description of image
+   image_5_background_position: left bottom
+-  image_6: /images/temp-landscape.jpg
+   label_6: Description of image
+   image_6_background_position: left bottom
 ---
 
 <!----------------HEADER---------------------->
@@ -221,7 +240,7 @@ roomsbig:
 
 <!----------------PROPERTY----------------->
 
-<div class="py-15p sm:py-10p px-2p" id="property">
+<div class="max-w-screen-2xl mx-auto py-15p sm:py-10p px-2p" id="property">
     <h4 class="uppercase text-4xl sm:text-7xl lg:text-8xl font-semibold"> The Property </h4>
     <p class="pb-2p pt-2p sm:pt-0 editable"> Our oasis is nestled within the natural beauty of South Lombok. The proximity to Dondon Beach, just a short 800-metre walk away, offers our  guests a wonderful opportunity to immerse themselves in the stunning coastal environment. Whether it's lounging on the beach, surfing the waves, or exploring the surrounding area.</p>	
 	
@@ -229,6 +248,14 @@ roomsbig:
 		<div class="col-span-full ">
 					{% include accordion-property.html %}
 		</div>
+
+
+
+		{% include property-image-gallery.html %}
+
+
+
+
 
     <div class="gallery grid grid-cols-6 sm:grid-rows-4 gap-1 sm:gap-gallery" id="lightgallery">
         <!-- Image 1 -->
@@ -269,8 +296,9 @@ roomsbig:
 <!----------------RESTAURANT----------------->
 
 
-<div class="bg-grey py-15p sm:py-10p px-2p" id="restaurant">
+<div class=" bg-grey " id="restaurant">
 
+<div class="max-w-screen-2xl mx-auto py-15p sm:py-10p px-2p">
 	<h4 class="text-4xl sm:text-7xl lg:text-8xl font-semibold uppercase md:pl-0"> The Restaurant </h4>
 
 	<p class="pb-5p pt-2p sm:pt-0 editable"> Nestled in the heart of our property lies a rustic haven for food enthusiasts - our open-air restaurant, where the warm embrace of wood and the gentle sway of alang-alang roofs welcome you to a unique dining experience. Surrounded by the lush greenery of our gardens, immerse yourself in nature's embrace as you indulge in a culinary journey unlike any other.
@@ -390,7 +418,7 @@ roomsbig:
 
 
 	</div>
-
+</div>
 </div>
 
 
@@ -574,8 +602,8 @@ roomsbig:
 <!----------------SUSTAINABILITY----------------->
 
 
-<div class="bg-grey py-15p sm:py-10p px-2p" id="sustainability">
-
+<div class="bg-grey " id="sustainability">
+<div class="max-w-screen-2xl mx-auto py-15p sm:py-10p px-2p">
 	<h4 class="text-4xl sm:text-7xl lg:text-8xl font-semibold uppercase pb-2p sm:pb-0"> Sustainability </h3>
 
 	<p class="pb-2p 2xl:pb-0 editable"> Our property welcomes eco-conscious travellers seeking both luxury and sustainability while relaxing in South Lombok's natural surroundings.</p>
@@ -658,7 +686,7 @@ roomsbig:
 		<div class="col-span-full">
 				{% include accordion-container.html %}
 		</div>
-	
+	</div>
 </div>
 
 {% include whatsapp.html %}
