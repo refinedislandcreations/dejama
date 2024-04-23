@@ -1,0 +1,46 @@
+
+   
+
+
+<div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+
+
+    {% for item in page.restaurant %}
+
+	<div class="col-span-1">
+		<div>
+			<img src="{{item.image_1}}" alt="{{item.label_1}}" class=" object-cover max-h-96 sm:max-h-full md:min-h-40 md:pr-2p pb-5p">
+		</div>
+	</div>
+
+	<div class="col-span-1">
+		<div>
+			<img src="{{item.image_2}}" alt="{{item.label_2}}" class=" object-cover max-h-96 sm:max-h-full md:min-h-40 md:pr-2p pb-5p">
+		</div>
+	</div>
+
+	<div class="col-span-2 md:hidden">
+		<div>
+			<h2 class="md:p-5p uppercase text-2xl pb-2p md:pb-0"> {{item.title}} </h2>
+			<p class="md:px-5p pb-5p"> {{item.description}}	</p>
+		
+		</div>
+	</div>
+
+	<div class="hidden md:block col-span-3">
+
+		<div class="py-5p ml-[-10%] flex justify-center items-center h-full">
+			<div class="bg-beige z-40 relative">
+				<h2 class="p-5p uppercase text-2xl"> {{item.title}} </h2>
+				<p class="px-5p pb-5p editable"> {{item.description}} </p>
+			
+			</div>
+		</div>
+
+	</div>
+
+    {% endfor %}
+
+</div>	
+
+	
