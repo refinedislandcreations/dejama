@@ -1,0 +1,78 @@
+
+
+{% for item in page.detailed_glamping %}
+
+<h3 class="text-4xl sm:text-7xl lg:text-8xl font-semibold uppercase"> {{item.title}} </h3>
+
+<div class="md:hidden">
+    <div>
+        <p class="pb-5p sm:pb-2p pt-5p sm:pt-0"> {{item.description_1}} </p>
+        <p class="pb-5p sm:pb-2p"> {{item.description_2}} </p>
+        <p class="pb-5p"> {{item.description_3}} </p>
+
+        <ul class="list-disc pl-5p">
+            <li class="ml-2p"> {{item.feature_1}} </li>
+            <li class="ml-2p"> {{item.feature_2}} </li>
+            <li class="ml-2p"> {{item.feature_3}}  </li>
+            <li class="ml-2p"> {{item.feature_4}}  </li>
+            <li class="ml-2p"> {{item.feature_5}}  </li>	
+            <li class="ml-2p"> {{item.feature_6}}  </li>
+            <li class="ml-2p pb-5p md:pb-0"> {{item.feature_7}} </li>
+        </ul>
+    </div>
+</div>
+
+<div class="grid grid-cols-3 md:grid-cols-8">
+
+<div class="col-span-3 grid grid-cols-3 gap-1" id="lightgallery">
+    
+    <a class="col-span-3" href="{{item.image_1}}" aria-label="{{item.label_1}}">
+        <div class="bg-img-2 gallery-bg-image min-h-30 sm:min-h-40 md:min-h-50 mb-2p"></div>
+    </a> 
+
+    <a class="col-span-1" href="{{item.image_2}}" aria-label="{{item.label_2}}">
+        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
+    </a> 
+
+    <a class="col-span-1" href="{{item.image_3}}" aria-label="{{item.label_3}}">
+        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
+    </a> 
+
+    <a class="col-span-1" href="{{item.image_4}}" aria-label="{{item.label_4}}">
+        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
+    </a> 
+
+</div>
+
+
+<div class="hidden col-span-5 px-5p md:flex flex-col justify-between items-start">
+    <div class="flex flex-col h-full justify-end">
+        <p class="pb-2p"> {{item.description_1}} </p>
+        <p class="pb-2p"> {{item.description_2}} </p>
+        <p class="pb-5p"> {{item.description_3}} </p>
+
+        <ul class="list-disc">
+            <li class="ml-2p"> {{item.feature_1}} </li>
+            <li class="ml-2p"> {{item.feature_2}} </li>
+            <li class="ml-2p"> {{item.feature_3}} </li>
+            <li class="ml-2p"> {{item.feature_4}} </li>
+            <li class="ml-2p"> {{item.feature_5}} </li>	
+            <li class="ml-2p"> {{item.feature_6}} </li>
+            <li class="ml-2p"> {{item.feature_7}} </li>
+        </ul>
+        
+    </div>
+
+    <div class="flex justify-end items-center">
+        <a href="#" target="" class="button mt-20p"> Book now </a>
+    </div>
+</div>
+
+<div class="col-span-full md:hidden flex justify-center items-center">
+    <a href="#" target="" class="button mt-10p"> Book now </a>
+</div>
+
+
+</div>
+
+{% endfor %}
