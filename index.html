@@ -83,6 +83,26 @@ restaurant:
    label_1: Description of image
    image_2: /images/temp-landscape.jpg
    label_2: Description of image
+activity_1:
+-  title: Picnic
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe maiores mollitia ipsum reprehenderit! Tempora cupiditate eligendi vel eaque culpa nam accusamus ex, aliquam aliquid voluptatem, unde, magni magnam provident aut!
+activity_2:
+-  title: Yoga
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe maiores mollitia ipsum reprehenderit! Tempora cupiditate eligendi vel eaque culpa nam accusamus ex, aliquam aliquid voluptatem, unde, magni magnam provident aut!  
+activity_3:
+-  title: Spa
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe maiores mollitia ipsum reprehenderit! Tempora cupiditate eligendi vel eaque culpa nam accusamus ex, aliquam aliquid voluptatem, unde, magni magnam provident aut! 
+activity_4:
+-  title: Cooking Class
+   image: /images/temp-landscape.jpg
+   label: Description of image
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe maiores mollitia ipsum reprehenderit! Tempora cupiditate eligendi vel eaque culpa nam accusamus ex, aliquam aliquid voluptatem, unde, magni magnam provident aut!  
 ---
 
 <!----------------HEADER---------------------->
@@ -443,7 +463,10 @@ restaurant:
             <h4 class="md:[writing-mode:vertical-rl] md:rotate-180 text-4xl sm:text-7xl lg:text-8xl font-semibold uppercase m-0 pl-2p sm:pl-0 md:p-0"> Activities </h4>
         </div>
 
-                <!--- Picnic -->
+
+		{% include activities.html %}
+
+                <!--- Picnic --
                 <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p pl-2p sm:pl-0 ">
                     <a class="popupbutton" href="#popup1">
                             <div class="w-full min-h-25 sm:min-h-40 bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
@@ -454,7 +477,7 @@ restaurant:
                         </a>
                 </div>
         
-                <!--- Yoga -->
+                --- Yoga --
                 <div class="col-span-1 md:col-span-3 justify-center pb-2p pl-1p pr-2p md:pr-5p">
                     <a class="popupbutton" href="#popup2">
                         <div class="w-full min-h-25 sm:min-h-40 bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
@@ -465,7 +488,7 @@ restaurant:
                     </a>
                 </div>
         
-                <!------ Spa -->
+                ------ Spa --
                 <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p pl-2p sm:pl-0">
                     <a class="popupbutton" href="#popup3">
                         <div class="w-full min-h-25 sm:min-h-40 bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
@@ -476,7 +499,7 @@ restaurant:
                     </a>
                 </div>
         
-                <!----- Yoga -->
+                ---- Yoga --
                 <div class="col-span-1 md:col-span-3 justify-center pb-2p pl-1p pr-2p md:pr-5p">
                     <a class="popupbutton" href="#popup4">
                         <div class="w-full min-h-25 sm:min-h-40 bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url(/images/temp-landscape.jpg)" aria-label="">
@@ -488,7 +511,7 @@ restaurant:
                 </div>
             </div>
         
-            <!-- Pop-up 1 -->
+            -- Pop-up 1 --
             <div id="popup1" class="popupoverlay">
                 <div class="popup">
                     <h4 class="pt-5p pb-2p uppercase text-2xl">Picnic</h4>
@@ -499,7 +522,7 @@ restaurant:
                 </div>
             </div>
         
-            <!-- Pop-up 2 -->
+            -- Pop-up 2 --
             <div id="popup2" class="popupoverlay">
                 <div class="popup">
                     <h4 class="pt-5p pb-2p uppercase text-2xl">Spa</h4>
@@ -510,7 +533,7 @@ restaurant:
                 </div>
             </div>
         
-            <!-- Pop-up 3 -->
+            -- Pop-up 3 --
             <div id="popup3" class="popupoverlay">
                 <div class="popup">
                     <h4 class="pt-5p pb-2p uppercase text-2xl">Spa</h4>
@@ -521,7 +544,7 @@ restaurant:
                 </div>
             </div>
         
-            <!-- Pop-up 4 -->
+            -- Pop-up 4 --
             <div id="popup4" class="popupoverlay">
                 <div class="popup">
                     <h4 class="pt-5p pb-2p uppercase text-2xl">Cooking</h4>
@@ -531,7 +554,7 @@ restaurant:
                     </div>
                 </div>
             </div>
-
+		---------->
     
         
         
