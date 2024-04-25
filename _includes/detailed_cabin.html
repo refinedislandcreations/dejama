@@ -26,21 +26,22 @@
 
 <div class="col-span-3 grid grid-cols-3 gap-1" id="lightgallery">
     
-    <a class="col-span-3" href="{{item.image_1}}" aria-label="{{item.label_1}}">
-        <div class="bg-img-2 gallery-bg-image min-h-30 sm:min-h-40 md:min-h-50 mb-2p"></div>
-    </a> 
-
-    <a class="col-span-1" href="{{item.image_2}}" aria-label="{{item.label_2}}">
-        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
-    </a> 
-
-    <a class="col-span-1" href="{{item.image_3}}" aria-label="{{item.label_3}}">
-        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
-    </a> 
-
-    <a class="col-span-1" href="{{item.image_4}}" aria-label="{{item.label_4}}">
-        <div class="bg-img-2 gallery-bg-image min-h-20"></div>
-    </a> 
+    <a class="col-span-3" href="{{ item.image_1 }}" aria-label="{{ item.label_1 }}">
+        <div class="bg-cover bg-center bg-no-repeat object-cover min-h-30 sm:min-h-40 md:min-h-50 mb-2p" style="background-image: url({{ item.image_1 }});"></div>
+    </a>
+    
+    <a class="col-span-1" href="{{ item.image_2 }}" aria-label="{{ item.label_2 }}">
+        <div class="bg-cover bg-center bg-no-repeat object-cover min-h-20" style="background-image: url({{ item.image_2 }});"></div>
+    </a>
+    
+    <a class="col-span-1" href="{{ item.image_3 }}" aria-label="{{ item.label_3 }}">
+        <div class="bg-cover bg-center bg-no-repeat object-cover min-h-20" style="background-image: url({{ item.image_3 }});"></div>
+    </a>
+    
+    <a class="col-span-1" href="{{ item.image_4 }}" aria-label="{{ item.label_4 }}">
+        <div class="bg-cover bg-center bg-no-repeat object-cover min-h-20" style="background-image: url({{ item.image_4 }});"></div>
+    </a>
+    
 
 </div>
 
