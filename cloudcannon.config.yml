@@ -49,5 +49,9 @@ _inputs:
       value_key:
     label: Image Position
     cascade: true
+  layout:
+    type: disabled
+    label: Please do not change this. Thank you.
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
