@@ -10,6 +10,7 @@
         <p class="pb-5p sm:pb-2p"> {{item.description_2}} </p>
         <p class="pb-5p"> {{item.description_3}} </p>
 
+        <!--------
         <ul class="list-disc pl-5p">
             {% for feature in item.features %}
             <li class="ml-2p {% if forloop.last %} pb-5p md:pb-0 {% endif %}"> {{feature.feature_1}} </li>
@@ -21,6 +22,20 @@
             <li class="ml-2p"> {{item.feature_6}}  </li>
             <li class="ml-2p pb-5p md:pb-0"> {{item.feature_7}} </li>
         </ul>
+        ---->
+
+
+        <ul class="list-disc pl-5p">
+            {% for item in detailed_glamping %}
+              {% for feature in item.features %}
+                <li class="ml-2p {% if forloop.last %} pb-5p md:pb-0 {% endif %}">
+                  {{ feature }}
+                </li>
+              {% endfor %}
+            {% endfor %}
+        </ul>
+
+
     </div>
 </div>
 
