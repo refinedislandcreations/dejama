@@ -567,6 +567,9 @@ a {
 .mt-\[-10\%\] {
   margin-top: -10%;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .block {
   display: block;
 }
@@ -581,6 +584,9 @@ a {
 }
 .hidden {
   display: none;
+}
+.aspect-portrait-tall {
+  aspect-ratio: 5/8;
 }
 .size-44 {
   width: 11rem;

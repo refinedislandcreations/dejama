@@ -12,7 +12,7 @@
 
         <ul class="list-disc pl-5p">
             {% for feature in item.features %}
-            <li class="ml-2p {% if forloop.last %}pb-5p md:pb-0 {%endif %}"> {{feature.feature_1}} </li>
+            <li class="ml-2p {% if forloop.last %} pb-5p md:pb-0 {% endif %}"> {{feature.feature_1}} </li>
             {% endfor %}
             <li class="ml-2p"> {{item.feature_2}} </li>
             <li class="ml-2p"> {{item.feature_3}}  </li>
