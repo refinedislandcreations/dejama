@@ -500,7 +500,7 @@ body {
   z-index: 1000;
   position: fixed;
   transition: top .5s;
-  background: #F5F5F5;
+  background-color: #F5F5F5;
   padding: 0.6rem;
   border-radius: 60%;
   }
@@ -508,10 +508,12 @@ body {
   .hamburger-wrapper {
     top: -3rem;
   }
-  .hamburger-wrapper.active,.hamburger-wrapper.open {
-    top: 6.6vw;
-    background-color: #D9D9D9;
-  }
+  .hamburger-wrapper.active,.hamburger-wrapper.open{
+  top: 6.6vw;
+}
+.hamburger-wrapper.open {
+  background-color: #D9D9D9;
+}
 
  
   .mobile-menu {
