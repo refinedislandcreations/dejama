@@ -35,10 +35,19 @@ _inputs:
       allow_create:
       allow_empty: false
       values:
-        - top center
-        - bottom center
+        - center
+        - top
+        - bottom
+        - left
+        - left top
+        - left bottom
+        - right
+        - right top
+        - right bottom
+        -
         -
       value_key:
+    label: Image Position
     cascade: true
 data_config: {}
 timezone: Etc/UTC
