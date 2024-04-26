@@ -8,7 +8,7 @@
     <p class="pb-5p pl-2p pt-2p sm:pt-0"> We have 3 different types of lodging. </p>
 </div>
 
-{% for item in page.roomssmall %}
+{% for item in page.roomssmall limit: 3 %}
 
 <a href="{{item.url}}">
     <div class="md:hidden">

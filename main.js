@@ -11,12 +11,17 @@ $(document).ready(function() {
 
 
 
+function togglePopUp() {
+  console.log(this)
+  this.nextElementSibling.classList.toggle('active')
+  this.nextElementSibling.nextElementSibling.classList.toggle('active')
+}
 
-lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
-    download: false
+//lightGallery(document.getElementById('lightgallery'), {
+  //  speed: 500,
+    // download: false
     
-});
+//});
 
 
 
@@ -73,6 +78,5 @@ var allPanels = $('.accordion-index > .dd-index').hide();
     }
     oldScrollHeight = window.scrollY
   });
-
 
 
