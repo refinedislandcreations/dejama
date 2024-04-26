@@ -49,5 +49,12 @@ _inputs:
       value_key:
     label: Image Position
     cascade: true
+  banner_image:
+    type: text
+    options:
+      empty_type:
+    label: Hero Image
+    hidden: false
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
