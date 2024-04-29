@@ -49,5 +49,9 @@ _inputs:
       value_key:
     label: Image Position
     cascade: true
+  layout:
+    type: text
+    hidden: true
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
