@@ -62,5 +62,10 @@ _inputs:
     label: Lodging options on small screens
     comment: Please do not add additional options.
     cascade: true
+  roomsbig:
+    type: array
+    label: Lodging options on large screens
+    comment: Please do not add additional options.
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
