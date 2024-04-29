@@ -53,5 +53,9 @@ _inputs:
     type: text
     hidden: true
     cascade: true
+  roomssmall:
+    type: array
+    label: Lodging options on small screens
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
