@@ -55,7 +55,12 @@ _inputs:
     cascade: true
   roomssmall:
     type: array
+    options:
+      empty_type:
+      preview:
+      structures:
     label: Lodging options on small screens
+    comment: Please do not add additional options.
     cascade: true
 data_config: {}
 timezone: Etc/UTC
