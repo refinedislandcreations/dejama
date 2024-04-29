@@ -1,78 +1,80 @@
-<!-----------
+
 <div class="gallery grid grid-cols-6 sm:grid-rows-4 gap-1 sm:gap-gallery" id="lightgallery">
     {% for item in page.property %}
 
-    -- Image 1 --
+    <!-- Image 1 -->
     <a class="col-span-6 sm:row-span-1" href="{{item.image_1}}" aria-label="{{item.label_1}}">
         <div class="bg-cover bg-no-repeat object-cover min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{item.image_1}}); background-position: {{item.image_1_background_position}};"></div>
     </a>
 
-    -- Image 2 --
+    <!-- Image 2 -->
     <a class="col-span-3 sm:col-span-2 sm:row-span-2" href="{{item.image_2}}" aria-label="{{item.label_2}}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-80 flex justify-center items-center" style="background-image: url({{item.image_2}}); background-position: {{item.image_2_background_position}};"></div>
     </a>
 
-    -- Image 3 --
+    <!-- Image 3 -->
     <a class="col-span-3 sm:col-span-4" href="{{item.image_3}}" aria-label="{{item.label_3}}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{item.image_3}}); background-position: {{item.image_3_background_position}};"></div>
     </a>
 
-    -- Image 4 --
+    <!-- Image 4 -->
     <a class="col-span-3 sm:col-span-2" href="{{item.image_4}}" aria-label="{{item.label_4}}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{item.image_4}}); background-position: {{item.image_4_background_position}};"></div>
     </a>
 
-    -- Image 5 --
+    <!-- Image 5 -->
     <a class="col-span-3 sm:col-span-2 sm:row-span-2" href="{{item.image_5}}" aria-label="{{item.label_5}}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-80 flex justify-center items-center" style="background-image: url({{item.image_5}}); background-position: {{item.image_5_background_position}};"></div>
     </a>
 
-    -- Image 6 --
+    <!-- Image 6 -->
     <a class="col-span-6 sm:col-span-4" href="{{item.image_6}}" aria-label="{{item.label_6}}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{item.image_6}}); background-position: {{item.image_6_background_position}};"></div>
     </a>
 
     {% endfor %}
 </div>
------>
 
+
+<!--------
 
 <div class="gallery grid grid-cols-6 sm:grid-rows-4 gap-1 sm:gap-gallery" id="lightgallery">
 
-    <!-- Image 1 -->
+    -- Image 1 --
     {% assign item = page.property.item[0] %}
     <a class="col-span-6 sm:row-span-1" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat object-cover min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
-    <!-- Image 2 -->
+    -- Image 2 --
     {% assign item = page.property.item[1] %}
     <a class="col-span-3 sm:col-span-2 sm:row-span-2" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-80 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
-    <!-- Image 3 -->
+    -- Image 3 --
     {% assign item = page.property.item[2] %}
     <a class="col-span-3 sm:col-span-4" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
-    <!-- Image 4 -->
+    -- Image 4 --
     {% assign item = page.property.item[3] %}
     <a class="col-span-3 sm:col-span-2" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
-    <!-- Image 5 -->
+    -- Image 5 --
     {% assign item = page.property.item[4] %}
     <a class="col-span-3 sm:col-span-2 sm:row-span-2" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-80 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
-    <!-- Image 6 -->
+    -- Image 6 --
     {% assign item = page.property.item[5] %}
     <a class="col-span-6 sm:col-span-4" href="{{ item.image }}" aria-label="{{ item.label }}">
         <div class="bg-cover bg-no-repeat min-h-30 sm:min-h-40 flex justify-center items-center" style="background-image: url({{ item.image }}); background-position: {{ item.background_position }};"></div>
     </a>
 
 </div>
+---->
