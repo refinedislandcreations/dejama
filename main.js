@@ -11,11 +11,26 @@ $(document).ready(function() {
 
 
 
-function togglePopUp() {
-  console.log(this)
-  this.nextElementSibling.classList.toggle('active')
-  this.nextElementSibling.nextElementSibling.classList.toggle('active')
+
+
+function toggle(target) {
+  target.classList.toggle('active');
 }
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('popupbutton')) {
+      toggleNext(event.target);
+  }
+});
+
+
+
+
+//function togglePopUp() {
+  //console.log(this)
+  //this.nextElementSibling.classList.toggle('active')
+  //this.nextElementSibling.nextElementSibling.classList.toggle('active')
+//}
 
 //lightGallery(document.getElementById('lightgallery'), {
   //  speed: 500,
