@@ -10,21 +10,57 @@ $(document).ready(function() {
 });
 
 
+//popout
 
-function toggleActivities(target) {
-  console.log(target)
-  toggle(target.nextElementSibling)
-  toggle(target.nextElementSibling.nextElementSibling)
+//function toggleActivities(target) {
+  //console.log(target)
+  //toggle(target.nextElementSibling)
+  //toggle(target.nextElementSibling.nextElementSibling)
+//}
+
+//function toggle(target) {
+  //target.classList.toggle('active');
+//}
+
+//function clickBySelector(target){
+  //console.log(document.querySelector(target))
+  //document.querySelector(target).click()
+//}
+
+function togglePopup(id) {
+  var popup = document.getElementById(id);
+  var overlay = document.querySelector('.popupoverlay');
+
+  if (id) {
+      popup.classList.toggle('active');
+      overlay.classList.toggle('active');
+      if (popup.classList.contains('active')) {
+          document.body.style.overflow = 'hidden'; // Prevent scrolling when popup is active
+      } else {
+          document.body.style.overflow = ''; // Restore scrolling when popup is closed
+      }
+  } else {
+      // Close all popups and overlay
+      var popups = document.querySelectorAll('.popup.active');
+      var overlays = document.querySelectorAll('.popupoverlay.active');
+
+      popups.forEach(function(popup) {
+          popup.classList.remove('active');
+      });
+
+      overlays.forEach(function(overlay) {
+          overlay.classList.remove('active');
+      });
+
+      document.body.style.overflow = ''; // Restore scrolling when all popups are closed
+  }
+
+  // Prevent default behavior (e.g., jumping to the top of the page) for anchor elements
+  event.preventDefault();
 }
 
-function toggle(target) {
-  target.classList.toggle('active');
-}
 
-function clickBySelector(target){
-  console.log(document.querySelector(target))
-  document.querySelector(target).click()
-}
+
 
 
 
