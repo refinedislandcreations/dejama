@@ -454,7 +454,6 @@ body {
   transition: all 0.3s ease-out;
 }
 
-
 .popupoverlay {
   position: fixed;
   top: 0;
@@ -464,10 +463,14 @@ body {
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   display: none;
-
+  z-index: 5;
 }
+
 .popupoverlay.active  {
   display: flex;
+  background: #a0946a;
+  border-radius: 5px;
+  z-index: 1000!important;
 }
 
 .popup {
@@ -477,6 +480,10 @@ body {
     background: #a0946a;
     border-radius: 5px;
     z-index: 1000!important;
+}
+
+.popup.active {
+  top: 0;
 }
 
 .popup .close {
@@ -489,6 +496,11 @@ body {
   color: #141201;
   margin-right: 20px;
 }
+
+
+
+
+
 
   .hamburger-wrapper {
   cursor: pointer;

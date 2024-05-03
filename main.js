@@ -11,17 +11,20 @@ $(document).ready(function() {
 
 
 
-
+function toggleActivities(target) {
+  console.log(target)
+  toggle(target.nextElementSibling)
+  toggle(target.nextElementSibling.nextElementSibling)
+}
 
 function toggle(target) {
   target.classList.toggle('active');
 }
 
-document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('popupbutton')) {
-      toggleNext(event.target);
-  }
-});
+function clickBySelector(target){
+  console.log(document.querySelector(target))
+  document.querySelector(target).click()
+}
 
 
 

@@ -1,10 +1,8 @@
 
-      
-
    {% for item in page.activity_1 %}
 
                 <!--- Acitivity 1 -->
-                <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p pl-2p sm:pl-0" onclick="(){togglePopUp(this)}">
+                <div class="col-span-1 md:col-span-3 justify-center pr-1p pb-2p pl-2p sm:pl-0" id="activity_1" onclick="toggleActivities(this)">
                     <a class="popupbutton" href="#popup1">
                             <div class="w-full min-h-25 sm:min-h-40 bg-cover relative" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url({{item.image}})" aria-label="{{item.label}}">
                                 <div class="flex items-center justify-center absolute inset-0">
@@ -15,11 +13,11 @@
                 </div>
 
                  <!-- Pop-up 1 -->
-                <div class="popupoverlay">
+                <div class="popupoverlay" onclick="clickBySelector('#activity-1')">
                 </div>
                 <div class="popup" id="popup1">
                     <h4 class="pt-5p pb-2p uppercase text-2xl"> {{item.title}} </h4>
-                    <a class="close" href="/index.html#activities" onclick="closePopup('popup1')">&times;</a>
+                    <a class="close" href="/index.html#activities" onclick="clickBySelector('activity-1')">&times;</a>
                     <div>
                         <p> {{item.description}} </p>
                     </div>
