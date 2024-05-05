@@ -71,11 +71,11 @@ function togglePopup(id) {
   //this.nextElementSibling.nextElementSibling.classList.toggle('active')
 //}
 
-//lightGallery(document.getElementById('lightgallery'), {
-  //  speed: 500,
-    // download: false
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+     download: false
     
-//});
+});
 
 
 
