@@ -113,6 +113,17 @@ garden:
    image_3: /images/temp-landscape.jpg
    label_3: Description of image
    image_3_background_position: left bottom
+solar:
+ - image_1: /images/temp-landscape.jpg
+   label_1: Description of image
+   image_1_background_position: left bottom
+container:
+ - image_1: /images/temp-landscape.jpg
+   label_1: Description of image
+   image_1_background_position: left bottom
+   image_2: /images/temp-portrait.jpg
+   label_2: Description of image
+   image_2_background_position: left bottom
 ---
 <!----------------HEADER---------------------->
 
@@ -253,10 +264,11 @@ garden:
             </div>
 
             {% for item in page.garden %}
-            <div class="col-span-1 bg-cover min-h-30 sm:min-h-40" style="background-image:url({{ item.image_1.url }}); background-position: {{ item.image_1_background_position }};" aria-label="{{ item.label_1 }}"></div>
-            <div class="col-span-1 bg-cover min-h-30 sm:min-h-40" style="background-image:url({{ item.image_2.url }}); background-position: {{ item.image_2_background_position }};" aria-label="{{ item.label_2 }}"></div>
-            <div class="col-span-2 md:col-span-1 bg-cover min-h-30 sm:min-h-40" style="background-image:url({{ item.image_3.url }}); background-position: {{ item.image_3_background_position }};" aria-label="{{ item.label_3 }}"></div>
-            {% endfor %}
+            <div class="col-span-1 bg-cover bg-no-repeat object-cover min-h-30 sm:min-h-40" style="background-image: url({{ item.image_1 }}); background-position: {{ item.image_1_background_position }};" aria-label="{{ item.label_1 }}"></div>
+            <div class="col-span-1 bg-cover bg-no-repeat object-cover min-h-30 sm:min-h-40" style="background-image: url({{ item.image_2 }}); background-position: {{ item.image_2_background_position }};" aria-label="{{ item.label_2 }}"></div>
+            <div class="col-span-2 md:col-span-1 bg-cover bg-no-repeat object-cover min-h-30 sm:min-h-40" style="background-image: url({{ item.image_3 }}); background-position: {{ item.image_3_background_position }};" aria-label="{{ item.label_3 }}"></div>
+        {% endfor %}
+        
 
 
             <div class="col-span-4 md:col-span-2 flex flex-col h-full justify-end">
@@ -281,7 +293,9 @@ garden:
 			<h4 class="uppercase text-2xl sm:pt-5p"> Solar Power </h4>
 		</div>
 
-		<div class="col-span-1 bg-cover min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
+    {% for item in page.solar %}
+		<div class="col-span-1 bg-cover min-h-40" style="background-image:url({{ item.image_1 }}); background-position: {{ item.image_1_background_position }};" aria-label="{{ item.label_1 }}"></div>
+    {% endfor %}
 
 		<div class="col-span-4 flex flex-col h-full justify-end">
 			<h4 class="p-5p uppercase text-2xl hidden md:block"> Solar Power </h4>
@@ -307,8 +321,10 @@ garden:
 			<p class="px-5p hidden md:block editable"> At Dejama's, we're proud to share that the recycled shipping containers used to create our reception area, kitchen, bar, and public restrooms were sourced from Indonesia. </p>
 		</div>
 
-		<div class="col-span-1 bg-cover min-h-25 sm:min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
-		<div class="col-span-1 bg-cover min-h-25 sm:min-h-40" style="background-image:url(/images/temp-portrait.jpg)" aria-label=""></div>
+    {% for item in page.container %}
+		<div class="col-span-1 bg-cover min-h-25 sm:min-h-40" style="background-image:url({{ item.image_1 }}); background-position: {{ item.image_1_background_position }};" aria-label="{{ item.label_1 }}"></div>
+		<div class="col-span-1 bg-cover min-h-25 sm:min-h-40" style="background-image:url({{ item.image_2 }}); background-position: {{ item.image_2_background_position }};" aria-label="{{ item.label_2 }}"></div>
+    {% endfor %}
 	
 
 		<div class="col-span-2">

@@ -789,7 +789,7 @@ body {
 
 @media (min-width:1125px) {
   .accordion-index .dt-index a::after {
-    top: 0.5rem;
+    top: 2rem;
     right: 0.5rem;
   }
 
