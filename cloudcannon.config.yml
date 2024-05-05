@@ -67,5 +67,12 @@ _inputs:
     label: Lodging options on large screens
     comment: Please do not add additional options.
     cascade: true
+  url:
+    type: url
+    options:
+      paths:
+      empty_type:
+    hidden: true
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
