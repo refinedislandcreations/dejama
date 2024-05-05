@@ -74,5 +74,8 @@ _inputs:
       empty_type:
     hidden: true
     cascade: true
+  image:
+    type: image
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
