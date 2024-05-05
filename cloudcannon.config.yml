@@ -77,5 +77,29 @@ _inputs:
   image:
     type: image
     cascade: true
+  image_1:
+    type: image
+    label: First image
+    cascade: true
+  image_2:
+    type: image
+    label: Second image
+    cascade: true
+  image_3:
+    type: image
+    label: Third image
+    cascade: true
+  image_4:
+    type: image
+    label: Fourth image
+    cascade: true
+  image_5:
+    type: image
+    label: Fifth image
+    cascade: true
+  image_6:
+    type: image
+    label: Sixth image
+    cascade: true
 data_config: {}
 timezone: Etc/UTC
