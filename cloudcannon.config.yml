@@ -200,12 +200,12 @@ _inputs:
       preview:
       structures:
     label: Lodging options on small screens
-    comment: Please do not add additional options.
+    comment: Only shows the first 3 options. Any more are hidden.
     cascade: true
   roomsbig:
     type: array
     label: Lodging options on large screens
-    comment: Please do not add additional options.
+    comment: Only shows the first 3 options. Any more are hidden.
     cascade: true
   url:
     type: url
