@@ -698,6 +698,11 @@ a {
 .gap-9 {
   gap: 2.25rem;
 }
+.space-x-5p > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5% * var(--tw-space-x-reverse));
+  margin-left: calc(5% * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-y-5p > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(5% * calc(1 - var(--tw-space-y-reverse)));
@@ -802,6 +807,9 @@ a {
 }
 .pr-5p {
   padding-right: 5%;
+}
+.pt-10p {
+  padding-top: 10%;
 }
 .pt-15p {
   padding-top: 15%;
@@ -1742,6 +1750,9 @@ body {
   .sm\:pb-2p {
     padding-bottom: 2%;
   }
+  .sm\:pb-5p {
+    padding-bottom: 5%;
+  }
   .sm\:pl-0 {
     padding-left: 0px;
   }
@@ -1918,6 +1929,9 @@ body {
   .lg\:px-2p {
     padding-left: 2%;
     padding-right: 2%;
+  }
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
   .lg\:text-left {
     text-align: left;
