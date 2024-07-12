@@ -2,14 +2,16 @@
 layout: default
 ---
 
-
-<section>
-    <div class="max-w-screen-2xl mx-auto">
-        <div class="absolute inset-0 flex items-center justify-center">
-            <div class="px-5p text-center">
-                <p class="text-center uppercase text-2xl pb-5p sm:pb-2p editable"> Thank you for reaching out to us through our contact form. </p>
-                <p class="text-center px-10p editable"> We'll be in touch with you as soon as possible. </p>
-            </div>
+<section class="h-lvh max-w-screen-2xl mx-auto relative">
+    <div class="absolute inset-0 flex flex-col items-center justify-center space-y-5p">
+        <div class="w-32 sm:w-36 mx-auto">
+            <a href="/index.html">
+                {% include dejama-logo-text-black.html %}
+            </a>
+        </div>
+        <div class="px-5p text-center">
+            <p class="text-center uppercase text-2xl pb-5p sm:pb-2p editable"> Thank you for reaching out to us through our contact form. </p>
+            <p class="text-center px-10p editable"> We'll be in touch with you as soon as possible. </p>
         </div>
     </div>
 </section>
