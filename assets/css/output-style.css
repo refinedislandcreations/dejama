@@ -726,6 +726,10 @@ a {
 .p-5p {
   padding: 5%;
 }
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .px-15p {
   padding-left: 15%;
   padding-right: 15%;
@@ -840,6 +844,9 @@ a {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.underline {
+  text-decoration-line: underline;
 }
 .outline-none {
   outline: 2px solid transparent;
