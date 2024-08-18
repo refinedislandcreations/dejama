@@ -653,6 +653,9 @@ a {
 .list-disc {
   list-style-type: disc;
 }
+.list-decimal {
+  list-style-type: decimal;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -707,6 +710,11 @@ a {
   --tw-space-y-reverse: 0;
   margin-top: calc(5% * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5% * var(--tw-space-y-reverse));
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .text-balance {
   text-wrap: balance;
@@ -774,6 +782,10 @@ a {
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.py-2p {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1676,6 +1688,10 @@ body {
   .hamburger-wrapper {
     top: -4.5rem;
   }
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
