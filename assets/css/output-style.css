@@ -650,11 +650,11 @@ a {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.list-disc {
-  list-style-type: disc;
-}
 .list-decimal {
   list-style-type: decimal;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -701,6 +701,11 @@ a {
 .gap-9 {
   gap: 2.25rem;
 }
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-x-5p > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(5% * var(--tw-space-x-reverse));
@@ -710,11 +715,6 @@ a {
   --tw-space-y-reverse: 0;
   margin-top: calc(5% * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5% * var(--tw-space-y-reverse));
-}
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .text-balance {
   text-wrap: balance;
@@ -779,13 +779,13 @@ a {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-.py-5p {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
 .py-2p {
   padding-top: 2%;
   padding-bottom: 2%;
+}
+.py-5p {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .pb-0 {
   padding-bottom: 0px;
