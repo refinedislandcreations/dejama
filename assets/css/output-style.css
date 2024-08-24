@@ -701,11 +701,6 @@ a {
 .gap-9 {
   gap: 2.25rem;
 }
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .space-x-5p > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(5% * var(--tw-space-x-reverse));
@@ -1898,6 +1893,9 @@ body {
   .md\:pt-0 {
     padding-top: 0px;
   }
+  .md\:pt-10p {
+    padding-top: 10%;
+  }
   .md\:pt-5p {
     padding-top: 5%;
   }
@@ -1948,6 +1946,9 @@ body {
   }
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+  .lg\:pt-5p {
+    padding-top: 5%;
   }
   .lg\:text-left {
     text-align: left;
