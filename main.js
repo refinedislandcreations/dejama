@@ -10,22 +10,7 @@ $(document).ready(function() {
 });
 
 
-//popout
 
-//function toggleActivities(target) {
-  //console.log(target)
-  //toggle(target.nextElementSibling)
-  //toggle(target.nextElementSibling.nextElementSibling)
-//}
-
-//function toggle(target) {
-  //target.classList.toggle('active');
-//}
-
-//function clickBySelector(target){
-  //console.log(document.querySelector(target))
-  //document.querySelector(target).click()
-//}
 
 function togglePopup(id) {
   var popup = document.getElementById(id);
@@ -134,3 +119,52 @@ var allPanels = $('.accordion-index > .dd-index').hide();
   });
 
 
+
+
+
+
+ 
+	let input_check_in = document.querySelector(".date-check-in").min = new Date().toISOString().slice(0, 10);
+	let input_check_out = document.querySelector(".date-check-out").min = new Date().toISOString().slice(0, 10);
+	
+	// Booking
+	function OnBook() {
+		let link = "https://secure.guestpro.net/"
+		let merchant_id = "dejama"
+		let check_in = document.getElementById("check-in").value
+		let check_out = document.getElementById("check-out").value
+		let promo_code = document.getElementById("promo-code").value
+		let check_in_input = document.getElementById("check-in")
+		let check_out_input = document.getElementById("check-out")
+		let check_in_label = document.getElementById("check-in-label")
+		let check_out_label = document.getElementById("check-out-label")
+		if(check_in != '' && check_out != ''){
+			if (promo_code != '') {
+        window.open(link+merchant_id+"/hotel-filter-redirect/"+check_in+"/"+check_out+"/"+promo_code+"", '_blank');
+			}else{
+        window.open(link+merchant_id+"/hotel-filter-redirect/"+check_in+"/"+check_out+"/promo_code_empty"+"", '_blank');
+			}
+    }else if(check_in == ''){
+    	check_in_input.style.borderColor = "#dc3545"
+    	check_in_label.style.color = "#dc3545"
+    }else if(check_out == ''){
+    	check_out_input.style.borderColor = "#dc3545"
+    	check_out_label.style.color = "#dc3545"
+    }
+	}
+
+	
+
+	function WarningCheckIn() {
+  	let check_in_input = document.getElementById("check-in")
+  	let check_in_label = document.getElementById("check-in-label")
+  	check_in_input.style.borderColor = "#afabab"
+  	check_in_label.style.color = "#212529"
+	}
+
+	function WarningCheckOut() {
+  	let check_out_input = document.getElementById("check-out")
+		let check_out_label = document.getElementById("check-out-label")
+  	check_out_input.style.borderColor = "#afabab"
+  	check_out_label.style.color = "#212529"
+	}
