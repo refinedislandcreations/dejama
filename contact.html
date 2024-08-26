@@ -108,71 +108,77 @@ seo:
 
     </div>
 
-    <!-- Picture and details -->
-    <div class="col-span-1 mt-5p md:mt-0">
-
-        <div class="lg:grid lg:grid-cols-3 lg:gap-1">
-
-            <!-- Info Box --> 
-            <div class="col-span-2 bg-beige p-5p">
-                <nav class="grid grid-cols-2 gap-x-5p items-center">
-                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
-                        <div class="text-right">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <div class="pl-5p">
-                            info@dejamaresort.com
-                        </div>
-                    </a>
-                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
-                        <div class="text-right">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="pl-5p">
-                            +62 859 3954 9442
-                        </div>
-                    </a>
-                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
-                        <div class="text-right">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="pl-5p">
-                            +62 859 3954 9442
-                        </div>
-                    </a>
-                    <a href="#" target="_blank" class="flex items-center editable">
-                        <div class="text-right">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="pl-5p">
+<!-- Picture and details -->
+<div class="col-span-1 mt-5p md:mt-0">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-1">
+        <!-- Info Box --> 
+        <div class="col-span-2 bg-beige p-5p flex items-center">
+            <nav class="grid gap-y-5p w-full">
+                <!-- Icon and Info Row 1 -->
+                <div class="grid grid-cols-4 gap-x-5p items-center pb-2p">
+                    <div class="col-span-1 text-center">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="col-span-3">
+                        <a href="mailto:info@dejamaresort.com" target="_blank" class="editable" aria-label="Send an email to info@dejamaresort.com">info@dejamaresort.com</a>
+                    </div>
+                </div>
+        
+                <!-- Icon and Info Row 2 -->
+                <div class="grid grid-cols-4 gap-x-5p items-center pb-2p">
+                    <div class="col-span-1 text-center">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="col-span-3">
+                        <a href="tel:+6285939549442" target="_blank" class="editable" aria-label="Call us">+62 859 3954 9442</a>
+                    </div>
+                </div>
+        
+                <!-- Icon and Info Row 3 -->
+                <div class="grid grid-cols-4 gap-x-5p items-center pb-2p">
+                    <div class="col-span-1 text-center">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="col-span-3">
+                        <a href="https://wa.me/6285939549442" target="_blank" class="editable" aria-label="Send a WhatsApp message">+62 859 3954 9442</a>
+                    </div>
+                </div>
+        
+                <!-- Icon and Info Row 4 -->
+                <div class="grid grid-cols-4 gap-x-5p items-center pb-5p">
+                    <div class="col-span-1 text-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="col-span-3">
+                        <a href="https://maps.app.goo.gl/xrTmnkAHeEcFcEH56" target="_blank" class="editable" aria-label="Find us here">
                             Jl. Mertak, Mertak, Kec. Pujut, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83573
-                        </div>
-                    </a>
-                </nav>
-            </div>
-
-
-            <!---Picture for small screens-->
-
-            <img src="/uploads/dsc02359-2.jpg" class="editable hidden sm:block object-cover w-full h-48 lg:h-56 mt-10p lg:mt-0" srcset="/uploads/dsc02359-2.jpg 1x, /uploads/dsc02359-2-2x.jpg 2x" alt="The Dejama logo surrounded by lush, tropical greenery." title="Dejama logo" />
-
-
-            <!-- Picture -->
-            <div class="col-span-3 hidden lg:block">
-                <img src="/uploads/dsc04696.jpg" class="editable object-cover w-full h-56 ml-2p lg:ml-0" srcset="/uploads/dsc04696.jpg 1x, /uploads/dsc04696-2x.jpg 2x" alt="Hands carefully harvesting leaves from a plant in a lush, green garden." title="Harvesting Nature's Bounty" />
-            </div>
-
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-    </div>
+        <!-- Picture for small screens -->
+        <img src="/uploads/dsc02359-2.jpg" 
+        class="editable hidden sm:block object-cover object-center w-full h-64 lg:h-56 mt-10p lg:mt-0" 
+        srcset="/uploads/dsc02359-2.jpg 1x, /uploads/dsc02359-2-2x.jpg 2x" 
+        alt="The Dejama logo surrounded by lush, tropical greenery." 
+        title="Dejama logo" 
+        style="object-position: 50% 52%;" />
 
+        <!-- Picture -->
+        <div class="col-span-3 hidden lg:block">
+            <img src="/uploads/dsc04696.jpg" class="editable object-cover w-full h-56 ml-2p lg:ml-0" srcset="/uploads/dsc04696.jpg 1x, /uploads/dsc04696-2x.jpg 2x" alt="Hands carefully harvesting leaves from a plant in a lush, green garden." title="Harvesting Nature's Bounty" />
+        </div>
+    </div>
 </div>
 
+</div>
 
 <!------Google Map----->
 
 <div class="max-w-screen-2xl flex justify-center items-center google-map my-20p sm:my-0">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15767.743475052344!2d116.2698267!3d-8.8855549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcda9f045b35d9b%3A0x5bf545e0767f113d!2zbmluxJMtbmluxJMgc3R1ZGlv!5e0!3m2!1sen!2sth!4v1711861296482!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7883.67453190604!2d116.35439664137446!3d-8.894717464645263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcd0139973f34e1%3A0xce2cfd89821dcf57!2sDEJAMA%20GLAMPING%20RESORT%20LOMBOK!5e0!3m2!1sen!2sid!4v1724639039903!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
     

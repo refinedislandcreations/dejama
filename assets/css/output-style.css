@@ -519,10 +519,6 @@ a {
 .m-0 {
   margin: 0px;
 }
-.mx-10p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -592,14 +588,14 @@ a {
 .h-11 {
   height: 2.75rem;
 }
-.h-48 {
-  height: 12rem;
-}
 .h-56 {
   height: 14rem;
 }
 .h-60 {
   height: 15rem;
+}
+.h-64 {
+  height: 16rem;
 }
 .h-8 {
   height: 2rem;
@@ -701,6 +697,13 @@ a {
 .gap-9 {
   gap: 2.25rem;
 }
+.gap-x-5p {
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.gap-y-5p {
+  row-gap: 5%;
+}
 .space-x-5p > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(5% * var(--tw-space-x-reverse));
@@ -738,6 +741,10 @@ a {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-5p {
   padding: 5%;
