@@ -64,7 +64,7 @@ seo:
 ---
 <!----------------HEADER---------------------->
 
-<section class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.6), rgba(20, 18, 1, 0.9)), url('{{page.banner_image}}');" aria-label="{{page.banner_label}}">
+<section class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0.04), rgba(20, 18, 1, 0.08)), url('{{page.banner_image}}');" aria-label="{{page.banner_label}}">
 
 	<div class="text-center">
 		<h2 class="font-thin text-light text-6xl sm:text-8xl md:text-9xl uppercase"> Contact </h2>
@@ -114,22 +114,43 @@ seo:
         <div class="lg:grid lg:grid-cols-3 lg:gap-1">
 
             <!-- Info Box --> 
-            <div class="col-span-2 bg-beige p-5p  flex flex-col justify-center">
-                <nav>
-                    <a href="#" target="_blank" class="block mb-5p editable">
-                        <i class="fa-regular fa-envelope mx-10p"></i> info@dejamaresort.com
+            <div class="col-span-2 bg-beige p-5p">
+                <nav class="grid grid-cols-2 gap-x-5p items-center">
+                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
+                        <div class="text-right">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="pl-5p">
+                            info@dejamaresort.com
+                        </div>
                     </a>
-                    <a href="#" target="_blank" class="block mb-5p editable">
-                        <i class="fa-solid fa-phone mx-10p"></i>&nbsp;+62 859 3954 9442
+                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
+                        <div class="text-right">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="pl-5p">
+                            +62 859 3954 9442
+                        </div>
                     </a>
-                    <a href="#" target="_blank" class="block mb-5p editable">
-                        <i class="fa-brands fa-whatsapp mx-10p"></i>&nbsp;+62 859 3954 9442
+                    <a href="#" target="_blank" class="flex items-center mb-5p editable">
+                        <div class="text-right">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="pl-5p">
+                            +62 859 3954 9442
+                        </div>
                     </a>
-                    <a href="#" target="_blank" class="block editable">
-                        <i class="fa-solid fa-location-dot mx-10p"></i>&nbsp;Jl. Mertak, Mertak, Kec. Pujut, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83573
+                    <a href="#" target="_blank" class="flex items-center editable">
+                        <div class="text-right">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="pl-5p">
+                            Jl. Mertak, Mertak, Kec. Pujut, Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83573
+                        </div>
                     </a>
                 </nav>
             </div>
+
 
             <!---Picture for small screens-->
 
