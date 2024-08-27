@@ -819,10 +819,11 @@ label{
   line-height: 1.71428571em;
   letter-spacing: .05em;
   text-transform: uppercase;
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
   cursor: pointer;
   transition: .3s ease-in-out;
+  white-space: nowrap;
 }
 
 .btn-book-now:hover{
@@ -851,6 +852,16 @@ label{
 
 
 
+.padding-be-label, .padding-be-button {
+  padding-top: 5%;
+}
+
+
+@media (min-width: 576px) {
+  .padding-be-label {
+    padding-top: 0;
+  }
+}
 
 
 @media only screen and (max-width: 600px) {
