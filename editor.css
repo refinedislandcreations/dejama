@@ -34,6 +34,10 @@ img.small-centered-image {
     margin:auto;
 }
 
+span.pl-2p {
+    color: inherit;
+}
+
 
 @media(max-width: 767px) {
     .float-right-image, 

@@ -271,21 +271,20 @@ container:
 ---
 <!----------------HEADER---------------------->
 
-<section class="bg-cover bg-center" style="background-image: linear-gradient(rgba(20, 18, 1, 0), rgba(20, 18, 1, 0.73)), url('{{page.banner_image}}');" aria-label="{{page.banner_label}}">
-	<div class="max-width relative flex justify-center items-center min-h-screen">
+<section class="bg-cover bg-center min-h-screen py-8 relative flex justify-center items-center " style="background-image: linear-gradient(rgba(20, 18, 1, 0), rgba(20, 18, 1, 0.73)), url('{{page.banner_image}}');" aria-label="{{page.banner_label}}">
+	<div class="max-width relative ">
 
-		<div class="text-center flex flex-col items-center justify-center">
+		<div class="text-center flex flex-col items-center justify-center gap-8">
 			<div class="size-44 sm:size-60">
 				<img src="/images/dejama-logo-text-light.svg" />
 			</div>
          {% include booking-engine.html %}
 		</div>
-				
-			<!-- small bouncing dot at the bottom of the header -->
-			<div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white w-8 h-8 rounded-full bouncing-animation">
-			</div>
 			
 	</div>
+   <!-- small bouncing dot at the bottom of the header -->
+   <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white w-8 h-8 rounded-full bouncing-animation">
+   </div>
 </section>
 
 

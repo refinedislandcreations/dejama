@@ -527,6 +527,10 @@ a {
   margin-top: 20%;
   margin-bottom: 20%;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mb-10p {
   margin-bottom: 10%;
 }
@@ -697,6 +701,9 @@ a {
 .gap-9 {
   gap: 2.25rem;
 }
+.gap-8 {
+  gap: 2rem;
+}
 .gap-x-5p {
   -moz-column-gap: 5%;
        column-gap: 5%;
@@ -788,6 +795,10 @@ a {
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -905,11 +916,15 @@ html {
 
 
 /* For regular laptops and smaller screens */
-body {
+html body {
     max-width: 100%; /* Allow it to expand to the full width of the screen */
     background-color: #F5F5F5; 
     color:  #141201; 
     font-family: "Josefin Sans";
+}
+
+body a, body a:hover {
+  color: inherit;
 }
 
 /* For larger screens like flatscreen TVs */
@@ -1644,11 +1659,8 @@ body {
 .box-be-custom{
   background-color: #D9D9D978;
   padding: 24px 32px;
+  max-width: 80%;
 /*    box-shadow: 0 16px 30px #ebeef3;*/
-  margin-top: 30%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: -36%;
 }
 
 .input-be{
@@ -1709,24 +1721,9 @@ label{
   margin-right: -8px!important;
 }
 
-@media (min-width: 400px) {
-  .box-be-custom {
-    margin-top: 22%;
-  }
-}
 
-@media (min-width: 500px) {
-  .box-be-custom {
-    margin-top: 16%;
-  }
-}
 
-@media (min-width: 600px) {
-  .box-be-custom {
-    margin-top: 11%;
-    margin-bottom: -21%;
-  }
-}
+
 
 @media only screen and (max-width: 600px) {
   .input-be{
