@@ -527,10 +527,6 @@ a {
   margin-top: 20%;
   margin-bottom: 20%;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .mb-10p {
   margin-bottom: 10%;
 }
@@ -698,11 +694,11 @@ a {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-9 {
-  gap: 2.25rem;
-}
 .gap-8 {
   gap: 2rem;
+}
+.gap-9 {
+  gap: 2.25rem;
 }
 .gap-x-5p {
   -moz-column-gap: 5%;
@@ -1728,7 +1724,6 @@ label{
 @media only screen and (max-width: 600px) {
   .input-be{
     width: 100%;
-    margin-bottom: 12px;
   }
 
  .btn-book-now {
@@ -1749,9 +1744,7 @@ label{
 
 @media only screen and (max-width: 992px) {
  
-  .input-be{
-    margin-bottom: 12px;
-  }
+
   .btn-book-now{
      height: auto;
      padding: 12px 20px;

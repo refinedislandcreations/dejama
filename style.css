@@ -856,7 +856,6 @@ label{
 @media only screen and (max-width: 600px) {
   .input-be{
     width: 100%;
-    margin-bottom: 12px;
   }
 
  .btn-book-now {
@@ -877,13 +876,10 @@ label{
 
 @media only screen and (max-width: 992px) {
  
-  .input-be{
-    margin-bottom: 12px;
-  }
+
   .btn-book-now{
      height: auto;
      padding: 12px 20px;
-     margin-top: 6px;
    }
 }
 
