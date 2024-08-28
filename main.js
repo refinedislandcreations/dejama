@@ -51,11 +51,6 @@ function togglePopup(id) {
   //this.nextElementSibling.nextElementSibling.classList.toggle('active')
 //}
 
-lightGallery(document.getElementById('lightgallery'), {
-    speed: 500,
-     download: false
-    
-});
 
 
 
@@ -163,3 +158,12 @@ var allPanels = $('.accordion-index > .dd-index').hide();
   	check_out_input.style.borderColor = "#afabab"
   	check_out_label.style.color = "#212529"
 	}
+
+
+
+
+  lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+     download: false
+    
+});
