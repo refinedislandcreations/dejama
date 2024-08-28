@@ -544,9 +544,10 @@ body a, body a:hover {
     top: 0;
     right: max(calc(50vw - 800px), 0%);
     overflow-y: auto;
-    z-index: 50;
+    z-index: 9999;
     text-transform: uppercase;
   }
+
   @media (min-width:300px) {
   
 .accordion-property-pt {

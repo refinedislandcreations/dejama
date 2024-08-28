@@ -1,15 +1,10 @@
-const burger = document.querySelector('.hamburger-wrapper')
-let oldScrollHeight = 0
-
-
-$(document).ready(function() {
-    $('.hamburger-wrapper').click(function() {
-        $('.mobile-menu').fadeToggle(300);
-        $('.hamburger-wrapper').toggleClass('open');
-    });
+// Handling hamburger menu click
+$(document).ready(function () {
+  $('.hamburger-wrapper').click(function () {
+      $('.mobile-menu').fadeToggle(300); // Show/hide the mobile menu
+      $(this).toggleClass('open'); // Toggle open class for styling
+  });
 });
-
-
 
 
 function togglePopup(id) {
