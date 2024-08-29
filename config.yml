@@ -1,4 +1,4 @@
-url: "https://dan.com" # the base hostname & protocol for your site
+url: "http://dejamaresort.com/" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
 
