@@ -87,14 +87,14 @@ seo:
         <p class="uppercase text-2xl pb-2p"> Contact us </p>
         <p class="pb-5p editable"> Please do not hesitate to contact us. </p>
 
-        <form name="contact" method="POST" data-netlify="true" class="grid mx-auto rounded-lg">
-            <label for="name" class="block text-sm font-semibold">Name</label>
+        <form name="contact" method="POST" action="/thankyou.html" data-netlify="true" class="grid mx-auto rounded-lg">
+            <label for="name" class="block text-sm font-semibold text-dark">Name</label>
             <input type="text" name="name" id="name" placeholder="Your Name" aria-label="Name" class="outline-none py-1 pl-[2%] custom-box-shadow border border-gray-300 rounded-md" />
         
-            <label for="email" class="block pt-2p text-sm font-semibold">Email</label>
+            <label for="email" class="block pt-2p text-sm font-semibold text-dark">Email</label>
             <input type="email" name="email" id="email" placeholder="Your Email" aria-label="Email" class="outline-none py-1 pl-[2%] custom-box-shadow border border-gray-300 rounded-md" />
         
-            <label for="message" class="block pt-2p text-sm font-semibold">Message</label>
+            <label for="message" class="block pt-2p text-sm font-semibold text-dark">Message</label>
             <textarea rows="8" name="message" id="message" placeholder="Your Message" class="py-1 w-full custom-box-shadow pt-[2%] pl-[2%] border border-gray-300 rounded-md"></textarea>
         
             <input type="hidden" name="form-name" value="contact" />

@@ -56,6 +56,10 @@ body a, body a:hover {
   color: #F5F5F5; 
 }
 
+.text-dark {
+  color:  #141201;
+}
+
 .bg-white {
   background-color: #F5F5F5; 
 }
