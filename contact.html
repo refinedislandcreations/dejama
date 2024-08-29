@@ -87,7 +87,7 @@ seo:
         <p class="uppercase text-2xl pb-2p"> Contact us </p>
         <p class="pb-5p editable"> Please do not hesitate to contact us. </p>
 
-        <form name="contact" netlify method="POST" action="/thankyou.html" class="grid mx-auto rounded-lg">
+        <form name="contact" method="POST" data-netlify="true" action="/thankyou.html" class="grid mx-auto rounded-lg">
             <label for="name" class="block text-sm font-semibold text-dark">Name</label>
             <input type="text" name="name" id="name" placeholder="Your Name" aria-label="Name" class="outline-none py-1 pl-[2%] custom-box-shadow border border-gray-300 rounded-md" />
         
@@ -98,7 +98,6 @@ seo:
             <textarea rows="8" name="message" id="message" placeholder="Your Message" class="py-1 w-full custom-box-shadow pt-[2%] pl-[2%] border border-gray-300 rounded-md"></textarea>
         
             <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="redirect" value="/thankyou.html" />
         
             <div class="flex justify-center mt-5p mb-10p sm:mb-0 md:mb-5p lg:mb-0">
                 <button type="submit" class="button">Send</button>
