@@ -492,6 +492,9 @@ a {
 .left-1\/2 {
   left: 50%;
 }
+.bottom-9 {
+  bottom: 2.25rem;
+}
 .z-40 {
   z-index: 40;
 }
